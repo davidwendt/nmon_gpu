@@ -1,0 +1,3433 @@
+<html>
+	<head>
+		<title>nmonChart</title>
+<script>
+function config() {
+    var myWindow = window.open("", "MsgWindow", "width=1024, height=800");
+    myWindow.document.write("<h2>Configuration data for test.nmon <br>Use PageDown or Scroll bar (if available)</h2><br>\
+<b>progname</b> = nmon_gpu<br>\
+<b>command</b> = ./nmon_gpu -F test.nmon -s 1 -c 30 -a <br>\
+<b>version</b> = 16j<br>\
+<b>disks_per_line</b> = 150<br>\
+<b>max_disks</b> = 256<br>\
+<b>disks</b> = 5<br>\
+<b>host</b> = dwendt-X299-A<br>\
+<b>user</b> = dwendt<br>\
+<b>OS</b> = Linux<br>\
+<b>runname</b> = dwendt-X299-A<br>\
+<b>time</b> = 09:39.39<br>\
+<b>date</b> = 08-AUG-2019<br>\
+<b>interval</b> = 1<br>\
+<b>snapshots</b> = 30<br>\
+<b>cpus</b> = 12<br>\
+<b>x86</b> = VendorId<br>\
+<b>x86</b> = ModelName<br>\
+<b>x86</b> = MHz<br>\
+<b>x86</b> = bogomips<br>\
+<b>x86</b> = ProcessorChips<br>\
+<b>x86</b> = Cores<br>\
+<b>x86</b> = hyperthreads<br>\
+<b>x86</b> = VirtualCPUs<br>\
+<b>proc_stat_variables</b> = 8<br>\
+<b>boottime</b> = 08:16 AM 05-Aug-2019<br>\
+000 <b>/etc/release</b> <br>\
+001 <b>/etc/release</b> DISTRIB_ID=Ubuntu<br>\
+002 <b>/etc/release</b> DISTRIB_RELEASE=16.04<br>\
+003 <b>/etc/release</b> DISTRIB_CODENAME=xenial<br>\
+004 <b>/etc/release</b> DISTRIB_DESCRIPTION=QUbuntu 16.04.6 LTSQ<br>\
+005 <b>/etc/release</b> NAME=QUbuntuQ<br>\
+006 <b>/etc/release</b> VERSION=Q16.04.6 LTS (Xenial Xerus)Q<br>\
+007 <b>/etc/release</b> ID=ubuntu<br>\
+008 <b>/etc/release</b> ID_LIKE=debian<br>\
+009 <b>/etc/release</b> PRETTY_NAME=QUbuntu 16.04.6 LTSQ<br>\
+010 <b>/etc/release</b> VERSION_ID=Q16.04Q<br>\
+011 <b>/etc/release</b> HOME_URL=Qhttp://www.ubuntu.com/Q<br>\
+012 <b>/etc/release</b> SUPPORT_URL=Qhttp://help.ubuntu.com/Q<br>\
+013 <b>/etc/release</b> BUG_REPORT_URL=Qhttp://bugs.launchpad.net/ubuntu/Q<br>\
+014 <b>/etc/release</b> VERSION_CODENAME=xenial<br>\
+015 <b>/etc/release</b> UBUNTU_CODENAME=xenial<br>\
+016 <b>lsb_release</b> <br>\
+017 <b>fdisk-l</b> <br>\
+018 <b>lsblk</b> <br>\
+019 <b>lscpu</b> <br>\
+020 <b>lscpu</b> Architecture:          x86_64<br>\
+021 <b>lscpu</b> CPU op-mode(s):        32-bit<br>\
+022 <b>lscpu</b> Byte Order:            Little Endian<br>\
+023 <b>lscpu</b> CPU(s):                12<br>\
+024 <b>lscpu</b> On-line CPU(s) list:   0-11<br>\
+025 <b>lscpu</b> Thread(s) per core:    2<br>\
+026 <b>lscpu</b> Core(s) per socket:    6<br>\
+027 <b>lscpu</b> Socket(s):             1<br>\
+028 <b>lscpu</b> NUMA node(s):          1<br>\
+029 <b>lscpu</b> Vendor ID:             GenuineIntel<br>\
+030 <b>lscpu</b> CPU family:            6<br>\
+031 <b>lscpu</b> Model:                 85<br>\
+032 <b>lscpu</b> Model name:            Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+033 <b>lscpu</b> Stepping:              4<br>\
+034 <b>lscpu</b> CPU MHz:               1199.989<br>\
+035 <b>lscpu</b> CPU max MHz:           4000.0000<br>\
+036 <b>lscpu</b> CPU min MHz:           1200.0000<br>\
+037 <b>lscpu</b> BogoMIPS:              7000.00<br>\
+038 <b>lscpu</b> Virtualization:        VT-x<br>\
+039 <b>lscpu</b> L1d cache:             32K<br>\
+040 <b>lscpu</b> L1i cache:             32K<br>\
+041 <b>lscpu</b> L2 cache:              1024K<br>\
+042 <b>lscpu</b> L3 cache:              8448K<br>\
+043 <b>lscpu</b> NUMA node0 CPU(s):     0-11<br>\
+044 <b>lscpu</b> Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+045 <b>lshw</b> <br>\
+046 <b>lshw</b> dwendt-x299-a<br>\
+047 <b>lshw</b>     description: Computer<br>\
+048 <b>lshw</b>     width: 64 bits<br>\
+049 <b>lshw</b>     capabilities: vsyscall32<br>\
+050 <b>lshw</b>   *-core<br>\
+051 <b>lshw</b>        description: Motherboard<br>\
+052 <b>lshw</b>        physical id: 0<br>\
+053 <b>lshw</b>      *-memory<br>\
+054 <b>lshw</b>           description: System memory<br>\
+055 <b>lshw</b>           physical id: 0<br>\
+056 <b>lshw</b>           size: 31GiB<br>\
+057 <b>lshw</b>      *-cpu<br>\
+058 <b>lshw</b>           product: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+059 <b>lshw</b>           vendor: Intel Corp.<br>\
+060 <b>lshw</b>           physical id: 1<br>\
+061 <b>lshw</b>           bus info: cpu@0<br>\
+062 <b>lshw</b>           size: 1200MHz<br>\
+063 <b>lshw</b>           capacity: 4GHz<br>\
+064 <b>lshw</b>           width: 64 bits<br>\
+065 <b>lshw</b>           capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d cpufreq<br>\
+066 <b>lshw</b>      *-pci:0<br>\
+067 <b>lshw</b>           description: Host bridge<br>\
+068 <b>lshw</b>           product: Sky Lake-E DMI3 Registers<br>\
+069 <b>lshw</b>           vendor: Intel Corporation<br>\
+070 <b>lshw</b>           physical id: 100<br>\
+071 <b>lshw</b>           bus info: pci@0000:00:00.0<br>\
+072 <b>lshw</b>           version: 04<br>\
+073 <b>lshw</b>           width: 32 bits<br>\
+074 <b>lshw</b>           clock: 33MHz<br>\
+075 <b>lshw</b>         *-generic:0<br>\
+076 <b>lshw</b>              description: System peripheral<br>\
+077 <b>lshw</b>              product: Sky Lake-E CBDMA Registers<br>\
+078 <b>lshw</b>              vendor: Intel Corporation<br>\
+079 <b>lshw</b>              physical id: 4<br>\
+080 <b>lshw</b>              bus info: pci@0000:00:04.0<br>\
+081 <b>lshw</b>              version: 04<br>\
+082 <b>lshw</b>              width: 64 bits<br>\
+083 <b>lshw</b>              clock: 33MHz<br>\
+084 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+085 <b>lshw</b>              configuration: driver=ioatdma latency=0<br>\
+086 <b>lshw</b>              resources: irq:52 memory:92f64000-92f67fff<br>\
+087 <b>lshw</b>         *-generic:1<br>\
+088 <b>lshw</b>              description: System peripheral<br>\
+089 <b>lshw</b>              product: Sky Lake-E CBDMA Registers<br>\
+090 <b>lshw</b>              vendor: Intel Corporation<br>\
+091 <b>lshw</b>              physical id: 4.1<br>\
+092 <b>lshw</b>              bus info: pci@0000:00:04.1<br>\
+093 <b>lshw</b>              version: 04<br>\
+094 <b>lshw</b>              width: 64 bits<br>\
+095 <b>lshw</b>              clock: 33MHz<br>\
+096 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+097 <b>lshw</b>              configuration: driver=ioatdma latency=0<br>\
+098 <b>lshw</b>              resources: irq:54 memory:92f60000-92f63fff<br>\
+099 <b>lshw</b>         *-generic:2<br>\
+100 <b>lshw</b>              description: System peripheral<br>\
+101 <b>lshw</b>              product: Sky Lake-E CBDMA Registers<br>\
+102 <b>lshw</b>              vendor: Intel Corporation<br>\
+103 <b>lshw</b>              physical id: 4.2<br>\
+104 <b>lshw</b>              bus info: pci@0000:00:04.2<br>\
+105 <b>lshw</b>              version: 04<br>\
+106 <b>lshw</b>              width: 64 bits<br>\
+107 <b>lshw</b>              clock: 33MHz<br>\
+108 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+109 <b>lshw</b>              configuration: driver=ioatdma latency=0<br>\
+110 <b>lshw</b>              resources: irq:52 memory:92f5c000-92f5ffff<br>\
+111 <b>lshw</b>         *-generic:3<br>\
+112 <b>lshw</b>              description: System peripheral<br>\
+113 <b>lshw</b>              product: Sky Lake-E CBDMA Registers<br>\
+114 <b>lshw</b>              vendor: Intel Corporation<br>\
+115 <b>lshw</b>              physical id: 4.3<br>\
+116 <b>lshw</b>              bus info: pci@0000:00:04.3<br>\
+117 <b>lshw</b>              version: 04<br>\
+118 <b>lshw</b>              width: 64 bits<br>\
+119 <b>lshw</b>              clock: 33MHz<br>\
+120 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+121 <b>lshw</b>              configuration: driver=ioatdma latency=0<br>\
+122 <b>lshw</b>              resources: irq:54 memory:92f58000-92f5bfff<br>\
+123 <b>lshw</b>         *-generic:4<br>\
+124 <b>lshw</b>              description: System peripheral<br>\
+125 <b>lshw</b>              product: Sky Lake-E CBDMA Registers<br>\
+126 <b>lshw</b>              vendor: Intel Corporation<br>\
+127 <b>lshw</b>              physical id: 4.4<br>\
+128 <b>lshw</b>              bus info: pci@0000:00:04.4<br>\
+129 <b>lshw</b>              version: 04<br>\
+130 <b>lshw</b>              width: 64 bits<br>\
+131 <b>lshw</b>              clock: 33MHz<br>\
+132 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+133 <b>lshw</b>              configuration: driver=ioatdma latency=0<br>\
+134 <b>lshw</b>              resources: irq:52 memory:92f54000-92f57fff<br>\
+135 <b>lshw</b>         *-generic:5<br>\
+136 <b>lshw</b>              description: System peripheral<br>\
+137 <b>lshw</b>              product: Sky Lake-E CBDMA Registers<br>\
+138 <b>lshw</b>              vendor: Intel Corporation<br>\
+139 <b>lshw</b>              physical id: 4.5<br>\
+140 <b>lshw</b>              bus info: pci@0000:00:04.5<br>\
+141 <b>lshw</b>              version: 04<br>\
+142 <b>lshw</b>              width: 64 bits<br>\
+143 <b>lshw</b>              clock: 33MHz<br>\
+144 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+145 <b>lshw</b>              configuration: driver=ioatdma latency=0<br>\
+146 <b>lshw</b>              resources: irq:54 memory:92f50000-92f53fff<br>\
+147 <b>lshw</b>         *-generic:6<br>\
+148 <b>lshw</b>              description: System peripheral<br>\
+149 <b>lshw</b>              product: Sky Lake-E CBDMA Registers<br>\
+150 <b>lshw</b>              vendor: Intel Corporation<br>\
+151 <b>lshw</b>              physical id: 4.6<br>\
+152 <b>lshw</b>              bus info: pci@0000:00:04.6<br>\
+153 <b>lshw</b>              version: 04<br>\
+154 <b>lshw</b>              width: 64 bits<br>\
+155 <b>lshw</b>              clock: 33MHz<br>\
+156 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+157 <b>lshw</b>              configuration: driver=ioatdma latency=0<br>\
+158 <b>lshw</b>              resources: irq:52 memory:92f4c000-92f4ffff<br>\
+159 <b>lshw</b>         *-generic:7<br>\
+160 <b>lshw</b>              description: System peripheral<br>\
+161 <b>lshw</b>              product: Sky Lake-E CBDMA Registers<br>\
+162 <b>lshw</b>              vendor: Intel Corporation<br>\
+163 <b>lshw</b>              physical id: 4.7<br>\
+164 <b>lshw</b>              bus info: pci@0000:00:04.7<br>\
+165 <b>lshw</b>              version: 04<br>\
+166 <b>lshw</b>              width: 64 bits<br>\
+167 <b>lshw</b>              clock: 33MHz<br>\
+168 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+169 <b>lshw</b>              configuration: driver=ioatdma latency=0<br>\
+170 <b>lshw</b>              resources: irq:54 memory:92f48000-92f4bfff<br>\
+171 <b>lshw</b>         *-generic:8 UNCLAIMED<br>\
+172 <b>lshw</b>              description: System peripheral<br>\
+173 <b>lshw</b>              product: Sky Lake-E MM/Vt-d Configuration Registers<br>\
+174 <b>lshw</b>              vendor: Intel Corporation<br>\
+175 <b>lshw</b>              physical id: 5<br>\
+176 <b>lshw</b>              bus info: pci@0000:00:05.0<br>\
+177 <b>lshw</b>              version: 04<br>\
+178 <b>lshw</b>              width: 32 bits<br>\
+179 <b>lshw</b>              clock: 33MHz<br>\
+180 <b>lshw</b>              capabilities: cap_list<br>\
+181 <b>lshw</b>              configuration: latency=0<br>\
+182 <b>lshw</b>         *-generic:9 UNCLAIMED<br>\
+183 <b>lshw</b>              description: System peripheral<br>\
+184 <b>lshw</b>              product: Intel Corporation<br>\
+185 <b>lshw</b>              vendor: Intel Corporation<br>\
+186 <b>lshw</b>              physical id: 5.2<br>\
+187 <b>lshw</b>              bus info: pci@0000:00:05.2<br>\
+188 <b>lshw</b>              version: 04<br>\
+189 <b>lshw</b>              width: 32 bits<br>\
+190 <b>lshw</b>              clock: 33MHz<br>\
+191 <b>lshw</b>              capabilities: cap_list<br>\
+192 <b>lshw</b>              configuration: latency=0<br>\
+193 <b>lshw</b>         *-generic:10 UNCLAIMED<br>\
+194 <b>lshw</b>              description: PIC<br>\
+195 <b>lshw</b>              product: Intel Corporation<br>\
+196 <b>lshw</b>              vendor: Intel Corporation<br>\
+197 <b>lshw</b>              physical id: 5.4<br>\
+198 <b>lshw</b>              bus info: pci@0000:00:05.4<br>\
+199 <b>lshw</b>              version: 04<br>\
+200 <b>lshw</b>              width: 32 bits<br>\
+201 <b>lshw</b>              clock: 33MHz<br>\
+202 <b>lshw</b>              capabilities: io_x_-apic bus_master cap_list<br>\
+203 <b>lshw</b>              configuration: latency=0<br>\
+204 <b>lshw</b>              resources: memory:92f6f000-92f6ffff<br>\
+205 <b>lshw</b>         *-generic:11 UNCLAIMED<br>\
+206 <b>lshw</b>              description: System peripheral<br>\
+207 <b>lshw</b>              product: Sky Lake-E Ubox Registers<br>\
+208 <b>lshw</b>              vendor: Intel Corporation<br>\
+209 <b>lshw</b>              physical id: 8<br>\
+210 <b>lshw</b>              bus info: pci@0000:00:08.0<br>\
+211 <b>lshw</b>              version: 04<br>\
+212 <b>lshw</b>              width: 32 bits<br>\
+213 <b>lshw</b>              clock: 33MHz<br>\
+214 <b>lshw</b>              capabilities: cap_list<br>\
+215 <b>lshw</b>              configuration: latency=0<br>\
+216 <b>lshw</b>         *-generic:12 UNCLAIMED<br>\
+217 <b>lshw</b>              description: Performance counters<br>\
+218 <b>lshw</b>              product: Sky Lake-E Ubox Registers<br>\
+219 <b>lshw</b>              vendor: Intel Corporation<br>\
+220 <b>lshw</b>              physical id: 8.1<br>\
+221 <b>lshw</b>              bus info: pci@0000:00:08.1<br>\
+222 <b>lshw</b>              version: 04<br>\
+223 <b>lshw</b>              width: 32 bits<br>\
+224 <b>lshw</b>              clock: 33MHz<br>\
+225 <b>lshw</b>              configuration: latency=0<br>\
+226 <b>lshw</b>         *-generic:13 UNCLAIMED<br>\
+227 <b>lshw</b>              description: System peripheral<br>\
+228 <b>lshw</b>              product: Sky Lake-E Ubox Registers<br>\
+229 <b>lshw</b>              vendor: Intel Corporation<br>\
+230 <b>lshw</b>              physical id: 8.2<br>\
+231 <b>lshw</b>              bus info: pci@0000:00:08.2<br>\
+232 <b>lshw</b>              version: 04<br>\
+233 <b>lshw</b>              width: 32 bits<br>\
+234 <b>lshw</b>              clock: 33MHz<br>\
+235 <b>lshw</b>              capabilities: cap_list<br>\
+236 <b>lshw</b>              configuration: latency=0<br>\
+237 <b>lshw</b>         *-usb<br>\
+238 <b>lshw</b>              description: USB controller<br>\
+239 <b>lshw</b>              product: 200 Series/Z370 Chipset Family USB 3.0 xHCI Controller<br>\
+240 <b>lshw</b>              vendor: Intel Corporation<br>\
+241 <b>lshw</b>              physical id: 14<br>\
+242 <b>lshw</b>              bus info: pci@0000:00:14.0<br>\
+243 <b>lshw</b>              version: 00<br>\
+244 <b>lshw</b>              width: 64 bits<br>\
+245 <b>lshw</b>              clock: 33MHz<br>\
+246 <b>lshw</b>              capabilities: xhci bus_master cap_list<br>\
+247 <b>lshw</b>              configuration: driver=xhci_hcd latency=0<br>\
+248 <b>lshw</b>              resources: irq:31 memory:92f30000-92f3ffff<br>\
+249 <b>lshw</b>         *-generic:14 UNCLAIMED<br>\
+250 <b>lshw</b>              description: Signal processing controller<br>\
+251 <b>lshw</b>              product: 200 Series PCH Thermal Subsystem<br>\
+252 <b>lshw</b>              vendor: Intel Corporation<br>\
+253 <b>lshw</b>              physical id: 14.2<br>\
+254 <b>lshw</b>              bus info: pci@0000:00:14.2<br>\
+255 <b>lshw</b>              version: 00<br>\
+256 <b>lshw</b>              width: 64 bits<br>\
+257 <b>lshw</b>              clock: 33MHz<br>\
+258 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+259 <b>lshw</b>              configuration: latency=0<br>\
+260 <b>lshw</b>              resources: memory:92f6e000-92f6efff<br>\
+261 <b>lshw</b>         *-communication<br>\
+262 <b>lshw</b>              description: Communication controller<br>\
+263 <b>lshw</b>              product: 200 Series PCH CSME HECI #1<br>\
+264 <b>lshw</b>              vendor: Intel Corporation<br>\
+265 <b>lshw</b>              physical id: 16<br>\
+266 <b>lshw</b>              bus info: pci@0000:00:16.0<br>\
+267 <b>lshw</b>              version: 00<br>\
+268 <b>lshw</b>              width: 64 bits<br>\
+269 <b>lshw</b>              clock: 33MHz<br>\
+270 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+271 <b>lshw</b>              configuration: driver=mei_me latency=0<br>\
+272 <b>lshw</b>              resources: irq:66 memory:92f6d000-92f6dfff<br>\
+273 <b>lshw</b>         *-storage<br>\
+274 <b>lshw</b>              description: SATA controller<br>\
+275 <b>lshw</b>              product: 200 Series PCH SATA controller [AHCI mode]<br>\
+276 <b>lshw</b>              vendor: Intel Corporation<br>\
+277 <b>lshw</b>              physical id: 17<br>\
+278 <b>lshw</b>              bus info: pci@0000:00:17.0<br>\
+279 <b>lshw</b>              version: 00<br>\
+280 <b>lshw</b>              width: 32 bits<br>\
+281 <b>lshw</b>              clock: 66MHz<br>\
+282 <b>lshw</b>              capabilities: storage ahci_1.0 bus_master cap_list<br>\
+283 <b>lshw</b>              configuration: driver=ahci latency=0<br>\
+284 <b>lshw</b>              resources: irq:48 memory:92f68000-92f69fff memory:92f6c000-92f6c0ff ioport:3050(size=8) ioport:3040(size=4) ioport:3020(size=32) memory:92f6b000-92f6b7ff<br>\
+285 <b>lshw</b>         *-pci:0<br>\
+286 <b>lshw</b>              description: PCI bridge<br>\
+287 <b>lshw</b>              product: 200 Series PCH PCI Express Root Port #1<br>\
+288 <b>lshw</b>              vendor: Intel Corporation<br>\
+289 <b>lshw</b>              physical id: 1c<br>\
+290 <b>lshw</b>              bus info: pci@0000:00:1c.0<br>\
+291 <b>lshw</b>              version: f0<br>\
+292 <b>lshw</b>              width: 32 bits<br>\
+293 <b>lshw</b>              clock: 33MHz<br>\
+294 <b>lshw</b>              capabilities: pci normal_decode bus_master cap_list<br>\
+295 <b>lshw</b>              configuration: driver=pcieport<br>\
+296 <b>lshw</b>              resources: irq:24<br>\
+297 <b>lshw</b>         *-pci:1<br>\
+298 <b>lshw</b>              description: PCI bridge<br>\
+299 <b>lshw</b>              product: 200 Series PCH PCI Express Root Port #5<br>\
+300 <b>lshw</b>              vendor: Intel Corporation<br>\
+301 <b>lshw</b>              physical id: 1c.4<br>\
+302 <b>lshw</b>              bus info: pci@0000:00:1c.4<br>\
+303 <b>lshw</b>              version: f0<br>\
+304 <b>lshw</b>              width: 32 bits<br>\
+305 <b>lshw</b>              clock: 33MHz<br>\
+306 <b>lshw</b>              capabilities: pci normal_decode bus_master cap_list<br>\
+307 <b>lshw</b>              configuration: driver=pcieport<br>\
+308 <b>lshw</b>              resources: irq:25 memory:92e00000-92efffff<br>\
+309 <b>lshw</b>            *-usb<br>\
+310 <b>lshw</b>                 description: USB controller<br>\
+311 <b>lshw</b>                 product: ASMedia Technology Inc.<br>\
+312 <b>lshw</b>                 vendor: ASMedia Technology Inc.<br>\
+313 <b>lshw</b>                 physical id: 0<br>\
+314 <b>lshw</b>                 bus info: pci@0000:02:00.0<br>\
+315 <b>lshw</b>                 version: 00<br>\
+316 <b>lshw</b>                 width: 64 bits<br>\
+317 <b>lshw</b>                 clock: 33MHz<br>\
+318 <b>lshw</b>                 capabilities: xhci bus_master cap_list<br>\
+319 <b>lshw</b>                 configuration: driver=xhci_hcd latency=0<br>\
+320 <b>lshw</b>                 resources: irq:16 memory:92e00000-92e07fff<br>\
+321 <b>lshw</b>         *-pci:2<br>\
+322 <b>lshw</b>              description: PCI bridge<br>\
+323 <b>lshw</b>              product: 200 Series PCH PCI Express Root Port #7<br>\
+324 <b>lshw</b>              vendor: Intel Corporation<br>\
+325 <b>lshw</b>              physical id: 1c.6<br>\
+326 <b>lshw</b>              bus info: pci@0000:00:1c.6<br>\
+327 <b>lshw</b>              version: f0<br>\
+328 <b>lshw</b>              width: 32 bits<br>\
+329 <b>lshw</b>              clock: 33MHz<br>\
+330 <b>lshw</b>              capabilities: pci normal_decode bus_master cap_list<br>\
+331 <b>lshw</b>              configuration: driver=pcieport<br>\
+332 <b>lshw</b>              resources: irq:26 memory:92d00000-92dfffff<br>\
+333 <b>lshw</b>            *-usb<br>\
+334 <b>lshw</b>                 description: USB controller<br>\
+335 <b>lshw</b>                 product: ASMedia Technology Inc.<br>\
+336 <b>lshw</b>                 vendor: ASMedia Technology Inc.<br>\
+337 <b>lshw</b>                 physical id: 0<br>\
+338 <b>lshw</b>                 bus info: pci@0000:03:00.0<br>\
+339 <b>lshw</b>                 version: 00<br>\
+340 <b>lshw</b>                 width: 64 bits<br>\
+341 <b>lshw</b>                 clock: 33MHz<br>\
+342 <b>lshw</b>                 capabilities: xhci bus_master cap_list<br>\
+343 <b>lshw</b>                 configuration: driver=xhci_hcd latency=0<br>\
+344 <b>lshw</b>                 resources: irq:18 memory:92d00000-92d07fff<br>\
+345 <b>lshw</b>         *-isa<br>\
+346 <b>lshw</b>              description: ISA bridge<br>\
+347 <b>lshw</b>              product: X299 Chipset LPC/eSPI Controller<br>\
+348 <b>lshw</b>              vendor: Intel Corporation<br>\
+349 <b>lshw</b>              physical id: 1f<br>\
+350 <b>lshw</b>              bus info: pci@0000:00:1f.0<br>\
+351 <b>lshw</b>              version: 00<br>\
+352 <b>lshw</b>              width: 32 bits<br>\
+353 <b>lshw</b>              clock: 33MHz<br>\
+354 <b>lshw</b>              capabilities: isa bus_master<br>\
+355 <b>lshw</b>              configuration: latency=0<br>\
+356 <b>lshw</b>         *-memory UNCLAIMED<br>\
+357 <b>lshw</b>              description: Memory controller<br>\
+358 <b>lshw</b>              product: 200 Series/Z370 Chipset Family Power Management Controller<br>\
+359 <b>lshw</b>              vendor: Intel Corporation<br>\
+360 <b>lshw</b>              physical id: 1f.2<br>\
+361 <b>lshw</b>              bus info: pci@0000:00:1f.2<br>\
+362 <b>lshw</b>              version: 00<br>\
+363 <b>lshw</b>              width: 32 bits<br>\
+364 <b>lshw</b>              clock: 33MHz (30.3ns)<br>\
+365 <b>lshw</b>              capabilities: bus_master<br>\
+366 <b>lshw</b>              configuration: latency=0<br>\
+367 <b>lshw</b>              resources: memory:92f44000-92f47fff<br>\
+368 <b>lshw</b>         *-multimedia<br>\
+369 <b>lshw</b>              description: Audio device<br>\
+370 <b>lshw</b>              product: 200 Series PCH HD Audio<br>\
+371 <b>lshw</b>              vendor: Intel Corporation<br>\
+372 <b>lshw</b>              physical id: 1f.3<br>\
+373 <b>lshw</b>              bus info: pci@0000:00:1f.3<br>\
+374 <b>lshw</b>              version: 00<br>\
+375 <b>lshw</b>              width: 64 bits<br>\
+376 <b>lshw</b>              clock: 33MHz<br>\
+377 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+378 <b>lshw</b>              configuration: driver=snd_hda_intel latency=32<br>\
+379 <b>lshw</b>              resources: irq:67 memory:92f40000-92f43fff memory:92f20000-92f2ffff<br>\
+380 <b>lshw</b>         *-serial UNCLAIMED<br>\
+381 <b>lshw</b>              description: SMBus<br>\
+382 <b>lshw</b>              product: 200 Series/Z370 Chipset Family SMBus Controller<br>\
+383 <b>lshw</b>              vendor: Intel Corporation<br>\
+384 <b>lshw</b>              physical id: 1f.4<br>\
+385 <b>lshw</b>              bus info: pci@0000:00:1f.4<br>\
+386 <b>lshw</b>              version: 00<br>\
+387 <b>lshw</b>              width: 64 bits<br>\
+388 <b>lshw</b>              clock: 33MHz<br>\
+389 <b>lshw</b>              configuration: latency=0<br>\
+390 <b>lshw</b>              resources: memory:92f6a000-92f6a0ff ioport:3000(size=32)<br>\
+391 <b>lshw</b>         *-network<br>\
+392 <b>lshw</b>              description: Ethernet interface<br>\
+393 <b>lshw</b>              product: Ethernet Connection (2) I219-V<br>\
+394 <b>lshw</b>              vendor: Intel Corporation<br>\
+395 <b>lshw</b>              physical id: 1f.6<br>\
+396 <b>lshw</b>              bus info: pci@0000:00:1f.6<br>\
+397 <b>lshw</b>              logical name: enp0s31f6<br>\
+398 <b>lshw</b>              version: 00<br>\
+399 <b>lshw</b>              serial: 10:7b:44:4f:13:a2<br>\
+400 <b>lshw</b>              size: 1Gbit/s<br>\
+401 <b>lshw</b>              capacity: 1Gbit/s<br>\
+402 <b>lshw</b>              width: 32 bits<br>\
+403 <b>lshw</b>              clock: 33MHz<br>\
+404 <b>lshw</b>              capabilities: bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation<br>\
+405 <b>lshw</b>              configuration: autonegotiation=on broadcast=yes driver=e1000e driverversion=3.2.6-k duplex=full firmware=0.2-4 ip=10.28.100.248 latency=0 link=yes multicast=yes port=twisted pair speed=1Gbit/s<br>\
+406 <b>lshw</b>              resources: irq:51 memory:92f00000-92f1ffff<br>\
+407 <b>lshw</b>      *-pci:1<br>\
+408 <b>lshw</b>           description: PCI bridge<br>\
+409 <b>lshw</b>           product: Sky Lake-E PCI Express Root Port A<br>\
+410 <b>lshw</b>           vendor: Intel Corporation<br>\
+411 <b>lshw</b>           physical id: 101<br>\
+412 <b>lshw</b>           bus info: pci@0000:16:00.0<br>\
+413 <b>lshw</b>           version: 04<br>\
+414 <b>lshw</b>           width: 32 bits<br>\
+415 <b>lshw</b>           clock: 33MHz<br>\
+416 <b>lshw</b>           capabilities: pci normal_decode bus_master cap_list<br>\
+417 <b>lshw</b>           configuration: driver=pcieport<br>\
+418 <b>lshw</b>           resources: irq:28 ioport:7000(size=4096) memory:b4000000-b50fffff ioport:a0000000(size=301989888)<br>\
+419 <b>lshw</b>         *-display<br>\
+420 <b>lshw</b>              description: VGA compatible controller<br>\
+421 <b>lshw</b>              product: GV100GL [Quadro GV100]<br>\
+422 <b>lshw</b>              vendor: NVIDIA Corporation<br>\
+423 <b>lshw</b>              physical id: 0<br>\
+424 <b>lshw</b>              bus info: pci@0000:17:00.0<br>\
+425 <b>lshw</b>              version: a1<br>\
+426 <b>lshw</b>              width: 64 bits<br>\
+427 <b>lshw</b>              clock: 33MHz<br>\
+428 <b>lshw</b>              capabilities: vga_controller bus_master cap_list rom<br>\
+429 <b>lshw</b>              configuration: driver=nvidia latency=0<br>\
+430 <b>lshw</b>              resources: irq:70 memory:b4000000-b4ffffff memory:a0000000-afffffff memory:b0000000-b1ffffff ioport:7000(size=128) memory:b5000000-b507ffff<br>\
+431 <b>lshw</b>         *-multimedia<br>\
+432 <b>lshw</b>              description: Audio device<br>\
+433 <b>lshw</b>              product: NVIDIA Corporation<br>\
+434 <b>lshw</b>              vendor: NVIDIA Corporation<br>\
+435 <b>lshw</b>              physical id: 0.1<br>\
+436 <b>lshw</b>              bus info: pci@0000:17:00.1<br>\
+437 <b>lshw</b>              version: a1<br>\
+438 <b>lshw</b>              width: 32 bits<br>\
+439 <b>lshw</b>              clock: 33MHz<br>\
+440 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+441 <b>lshw</b>              configuration: driver=snd_hda_intel latency=0<br>\
+442 <b>lshw</b>              resources: irq:68 memory:b5080000-b5083fff<br>\
+443 <b>lshw</b>      *-generic:0 UNCLAIMED<br>\
+444 <b>lshw</b>           description: System peripheral<br>\
+445 <b>lshw</b>           product: Intel Corporation<br>\
+446 <b>lshw</b>           vendor: Intel Corporation<br>\
+447 <b>lshw</b>           physical id: 2<br>\
+448 <b>lshw</b>           bus info: pci@0000:16:05.0<br>\
+449 <b>lshw</b>           version: 04<br>\
+450 <b>lshw</b>           width: 32 bits<br>\
+451 <b>lshw</b>           clock: 33MHz<br>\
+452 <b>lshw</b>           capabilities: cap_list<br>\
+453 <b>lshw</b>           configuration: latency=0<br>\
+454 <b>lshw</b>      *-generic:1 UNCLAIMED<br>\
+455 <b>lshw</b>           description: System peripheral<br>\
+456 <b>lshw</b>           product: Sky Lake-E RAS Configuration Registers<br>\
+457 <b>lshw</b>           vendor: Intel Corporation<br>\
+458 <b>lshw</b>           physical id: 3<br>\
+459 <b>lshw</b>           bus info: pci@0000:16:05.2<br>\
+460 <b>lshw</b>           version: 04<br>\
+461 <b>lshw</b>           width: 32 bits<br>\
+462 <b>lshw</b>           clock: 33MHz<br>\
+463 <b>lshw</b>           capabilities: cap_list<br>\
+464 <b>lshw</b>           configuration: latency=0<br>\
+465 <b>lshw</b>      *-generic:2 UNCLAIMED<br>\
+466 <b>lshw</b>           description: PIC<br>\
+467 <b>lshw</b>           product: Intel Corporation<br>\
+468 <b>lshw</b>           vendor: Intel Corporation<br>\
+469 <b>lshw</b>           physical id: 4<br>\
+470 <b>lshw</b>           bus info: pci@0000:16:05.4<br>\
+471 <b>lshw</b>           version: 04<br>\
+472 <b>lshw</b>           width: 32 bits<br>\
+473 <b>lshw</b>           clock: 33MHz<br>\
+474 <b>lshw</b>           capabilities: io_x_-apic bus_master cap_list<br>\
+475 <b>lshw</b>           configuration: latency=0<br>\
+476 <b>lshw</b>           resources: memory:b5100000-b5100fff<br>\
+477 <b>lshw</b>      *-generic:3 UNCLAIMED<br>\
+478 <b>lshw</b>           description: System peripheral<br>\
+479 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+480 <b>lshw</b>           vendor: Intel Corporation<br>\
+481 <b>lshw</b>           physical id: 6<br>\
+482 <b>lshw</b>           bus info: pci@0000:16:08.0<br>\
+483 <b>lshw</b>           version: 04<br>\
+484 <b>lshw</b>           width: 32 bits<br>\
+485 <b>lshw</b>           clock: 33MHz<br>\
+486 <b>lshw</b>           configuration: latency=0<br>\
+487 <b>lshw</b>      *-generic:4 UNCLAIMED<br>\
+488 <b>lshw</b>           description: System peripheral<br>\
+489 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+490 <b>lshw</b>           vendor: Intel Corporation<br>\
+491 <b>lshw</b>           physical id: 8.1<br>\
+492 <b>lshw</b>           bus info: pci@0000:16:08.1<br>\
+493 <b>lshw</b>           version: 04<br>\
+494 <b>lshw</b>           width: 32 bits<br>\
+495 <b>lshw</b>           clock: 33MHz<br>\
+496 <b>lshw</b>           configuration: latency=0<br>\
+497 <b>lshw</b>      *-generic:5 UNCLAIMED<br>\
+498 <b>lshw</b>           description: System peripheral<br>\
+499 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+500 <b>lshw</b>           vendor: Intel Corporation<br>\
+501 <b>lshw</b>           physical id: 8.2<br>\
+502 <b>lshw</b>           bus info: pci@0000:16:08.2<br>\
+503 <b>lshw</b>           version: 04<br>\
+504 <b>lshw</b>           width: 32 bits<br>\
+505 <b>lshw</b>           clock: 33MHz<br>\
+506 <b>lshw</b>           configuration: latency=0<br>\
+507 <b>lshw</b>      *-generic:6 UNCLAIMED<br>\
+508 <b>lshw</b>           description: System peripheral<br>\
+509 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+510 <b>lshw</b>           vendor: Intel Corporation<br>\
+511 <b>lshw</b>           physical id: 8.3<br>\
+512 <b>lshw</b>           bus info: pci@0000:16:08.3<br>\
+513 <b>lshw</b>           version: 04<br>\
+514 <b>lshw</b>           width: 32 bits<br>\
+515 <b>lshw</b>           clock: 33MHz<br>\
+516 <b>lshw</b>           configuration: latency=0<br>\
+517 <b>lshw</b>      *-generic:7 UNCLAIMED<br>\
+518 <b>lshw</b>           description: System peripheral<br>\
+519 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+520 <b>lshw</b>           vendor: Intel Corporation<br>\
+521 <b>lshw</b>           physical id: 8.4<br>\
+522 <b>lshw</b>           bus info: pci@0000:16:08.4<br>\
+523 <b>lshw</b>           version: 04<br>\
+524 <b>lshw</b>           width: 32 bits<br>\
+525 <b>lshw</b>           clock: 33MHz<br>\
+526 <b>lshw</b>           configuration: latency=0<br>\
+527 <b>lshw</b>      *-generic:8 UNCLAIMED<br>\
+528 <b>lshw</b>           description: System peripheral<br>\
+529 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+530 <b>lshw</b>           vendor: Intel Corporation<br>\
+531 <b>lshw</b>           physical id: 8.5<br>\
+532 <b>lshw</b>           bus info: pci@0000:16:08.5<br>\
+533 <b>lshw</b>           version: 04<br>\
+534 <b>lshw</b>           width: 32 bits<br>\
+535 <b>lshw</b>           clock: 33MHz<br>\
+536 <b>lshw</b>           configuration: latency=0<br>\
+537 <b>lshw</b>      *-generic:9 UNCLAIMED<br>\
+538 <b>lshw</b>           description: System peripheral<br>\
+539 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+540 <b>lshw</b>           vendor: Intel Corporation<br>\
+541 <b>lshw</b>           physical id: 8.6<br>\
+542 <b>lshw</b>           bus info: pci@0000:16:08.6<br>\
+543 <b>lshw</b>           version: 04<br>\
+544 <b>lshw</b>           width: 32 bits<br>\
+545 <b>lshw</b>           clock: 33MHz<br>\
+546 <b>lshw</b>           configuration: latency=0<br>\
+547 <b>lshw</b>      *-generic:10 UNCLAIMED<br>\
+548 <b>lshw</b>           description: System peripheral<br>\
+549 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+550 <b>lshw</b>           vendor: Intel Corporation<br>\
+551 <b>lshw</b>           physical id: 8.7<br>\
+552 <b>lshw</b>           bus info: pci@0000:16:08.7<br>\
+553 <b>lshw</b>           version: 04<br>\
+554 <b>lshw</b>           width: 32 bits<br>\
+555 <b>lshw</b>           clock: 33MHz<br>\
+556 <b>lshw</b>           configuration: latency=0<br>\
+557 <b>lshw</b>      *-generic:11 UNCLAIMED<br>\
+558 <b>lshw</b>           description: System peripheral<br>\
+559 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+560 <b>lshw</b>           vendor: Intel Corporation<br>\
+561 <b>lshw</b>           physical id: 7<br>\
+562 <b>lshw</b>           bus info: pci@0000:16:09.0<br>\
+563 <b>lshw</b>           version: 04<br>\
+564 <b>lshw</b>           width: 32 bits<br>\
+565 <b>lshw</b>           clock: 33MHz<br>\
+566 <b>lshw</b>           configuration: latency=0<br>\
+567 <b>lshw</b>      *-generic:12 UNCLAIMED<br>\
+568 <b>lshw</b>           description: System peripheral<br>\
+569 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+570 <b>lshw</b>           vendor: Intel Corporation<br>\
+571 <b>lshw</b>           physical id: 9.1<br>\
+572 <b>lshw</b>           bus info: pci@0000:16:09.1<br>\
+573 <b>lshw</b>           version: 04<br>\
+574 <b>lshw</b>           width: 32 bits<br>\
+575 <b>lshw</b>           clock: 33MHz<br>\
+576 <b>lshw</b>           configuration: latency=0<br>\
+577 <b>lshw</b>      *-generic:13 UNCLAIMED<br>\
+578 <b>lshw</b>           description: System peripheral<br>\
+579 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+580 <b>lshw</b>           vendor: Intel Corporation<br>\
+581 <b>lshw</b>           physical id: e<br>\
+582 <b>lshw</b>           bus info: pci@0000:16:0e.0<br>\
+583 <b>lshw</b>           version: 04<br>\
+584 <b>lshw</b>           width: 32 bits<br>\
+585 <b>lshw</b>           clock: 33MHz<br>\
+586 <b>lshw</b>           configuration: latency=0<br>\
+587 <b>lshw</b>      *-generic:14 UNCLAIMED<br>\
+588 <b>lshw</b>           description: System peripheral<br>\
+589 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+590 <b>lshw</b>           vendor: Intel Corporation<br>\
+591 <b>lshw</b>           physical id: e.1<br>\
+592 <b>lshw</b>           bus info: pci@0000:16:0e.1<br>\
+593 <b>lshw</b>           version: 04<br>\
+594 <b>lshw</b>           width: 32 bits<br>\
+595 <b>lshw</b>           clock: 33MHz<br>\
+596 <b>lshw</b>           configuration: latency=0<br>\
+597 <b>lshw</b>      *-generic:15 UNCLAIMED<br>\
+598 <b>lshw</b>           description: System peripheral<br>\
+599 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+600 <b>lshw</b>           vendor: Intel Corporation<br>\
+601 <b>lshw</b>           physical id: e.2<br>\
+602 <b>lshw</b>           bus info: pci@0000:16:0e.2<br>\
+603 <b>lshw</b>           version: 04<br>\
+604 <b>lshw</b>           width: 32 bits<br>\
+605 <b>lshw</b>           clock: 33MHz<br>\
+606 <b>lshw</b>           configuration: latency=0<br>\
+607 <b>lshw</b>      *-generic:16 UNCLAIMED<br>\
+608 <b>lshw</b>           description: System peripheral<br>\
+609 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+610 <b>lshw</b>           vendor: Intel Corporation<br>\
+611 <b>lshw</b>           physical id: e.3<br>\
+612 <b>lshw</b>           bus info: pci@0000:16:0e.3<br>\
+613 <b>lshw</b>           version: 04<br>\
+614 <b>lshw</b>           width: 32 bits<br>\
+615 <b>lshw</b>           clock: 33MHz<br>\
+616 <b>lshw</b>           configuration: latency=0<br>\
+617 <b>lshw</b>      *-generic:17 UNCLAIMED<br>\
+618 <b>lshw</b>           description: System peripheral<br>\
+619 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+620 <b>lshw</b>           vendor: Intel Corporation<br>\
+621 <b>lshw</b>           physical id: e.4<br>\
+622 <b>lshw</b>           bus info: pci@0000:16:0e.4<br>\
+623 <b>lshw</b>           version: 04<br>\
+624 <b>lshw</b>           width: 32 bits<br>\
+625 <b>lshw</b>           clock: 33MHz<br>\
+626 <b>lshw</b>           configuration: latency=0<br>\
+627 <b>lshw</b>      *-generic:18 UNCLAIMED<br>\
+628 <b>lshw</b>           description: System peripheral<br>\
+629 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+630 <b>lshw</b>           vendor: Intel Corporation<br>\
+631 <b>lshw</b>           physical id: e.5<br>\
+632 <b>lshw</b>           bus info: pci@0000:16:0e.5<br>\
+633 <b>lshw</b>           version: 04<br>\
+634 <b>lshw</b>           width: 32 bits<br>\
+635 <b>lshw</b>           clock: 33MHz<br>\
+636 <b>lshw</b>           configuration: latency=0<br>\
+637 <b>lshw</b>      *-generic:19 UNCLAIMED<br>\
+638 <b>lshw</b>           description: System peripheral<br>\
+639 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+640 <b>lshw</b>           vendor: Intel Corporation<br>\
+641 <b>lshw</b>           physical id: e.6<br>\
+642 <b>lshw</b>           bus info: pci@0000:16:0e.6<br>\
+643 <b>lshw</b>           version: 04<br>\
+644 <b>lshw</b>           width: 32 bits<br>\
+645 <b>lshw</b>           clock: 33MHz<br>\
+646 <b>lshw</b>           configuration: latency=0<br>\
+647 <b>lshw</b>      *-generic:20 UNCLAIMED<br>\
+648 <b>lshw</b>           description: System peripheral<br>\
+649 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+650 <b>lshw</b>           vendor: Intel Corporation<br>\
+651 <b>lshw</b>           physical id: e.7<br>\
+652 <b>lshw</b>           bus info: pci@0000:16:0e.7<br>\
+653 <b>lshw</b>           version: 04<br>\
+654 <b>lshw</b>           width: 32 bits<br>\
+655 <b>lshw</b>           clock: 33MHz<br>\
+656 <b>lshw</b>           configuration: latency=0<br>\
+657 <b>lshw</b>      *-generic:21 UNCLAIMED<br>\
+658 <b>lshw</b>           description: System peripheral<br>\
+659 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+660 <b>lshw</b>           vendor: Intel Corporation<br>\
+661 <b>lshw</b>           physical id: f<br>\
+662 <b>lshw</b>           bus info: pci@0000:16:0f.0<br>\
+663 <b>lshw</b>           version: 04<br>\
+664 <b>lshw</b>           width: 32 bits<br>\
+665 <b>lshw</b>           clock: 33MHz<br>\
+666 <b>lshw</b>           configuration: latency=0<br>\
+667 <b>lshw</b>      *-generic:22 UNCLAIMED<br>\
+668 <b>lshw</b>           description: System peripheral<br>\
+669 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+670 <b>lshw</b>           vendor: Intel Corporation<br>\
+671 <b>lshw</b>           physical id: f.1<br>\
+672 <b>lshw</b>           bus info: pci@0000:16:0f.1<br>\
+673 <b>lshw</b>           version: 04<br>\
+674 <b>lshw</b>           width: 32 bits<br>\
+675 <b>lshw</b>           clock: 33MHz<br>\
+676 <b>lshw</b>           configuration: latency=0<br>\
+677 <b>lshw</b>      *-generic:23 UNCLAIMED<br>\
+678 <b>lshw</b>           description: System peripheral<br>\
+679 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+680 <b>lshw</b>           vendor: Intel Corporation<br>\
+681 <b>lshw</b>           physical id: 1d<br>\
+682 <b>lshw</b>           bus info: pci@0000:16:1d.0<br>\
+683 <b>lshw</b>           version: 04<br>\
+684 <b>lshw</b>           width: 32 bits<br>\
+685 <b>lshw</b>           clock: 33MHz<br>\
+686 <b>lshw</b>           configuration: latency=0<br>\
+687 <b>lshw</b>      *-generic:24 UNCLAIMED<br>\
+688 <b>lshw</b>           description: System peripheral<br>\
+689 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+690 <b>lshw</b>           vendor: Intel Corporation<br>\
+691 <b>lshw</b>           physical id: 1d.1<br>\
+692 <b>lshw</b>           bus info: pci@0000:16:1d.1<br>\
+693 <b>lshw</b>           version: 04<br>\
+694 <b>lshw</b>           width: 32 bits<br>\
+695 <b>lshw</b>           clock: 33MHz<br>\
+696 <b>lshw</b>           configuration: latency=0<br>\
+697 <b>lshw</b>      *-generic:25 UNCLAIMED<br>\
+698 <b>lshw</b>           description: System peripheral<br>\
+699 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+700 <b>lshw</b>           vendor: Intel Corporation<br>\
+701 <b>lshw</b>           physical id: 1d.2<br>\
+702 <b>lshw</b>           bus info: pci@0000:16:1d.2<br>\
+703 <b>lshw</b>           version: 04<br>\
+704 <b>lshw</b>           width: 32 bits<br>\
+705 <b>lshw</b>           clock: 33MHz<br>\
+706 <b>lshw</b>           configuration: latency=0<br>\
+707 <b>lshw</b>      *-generic:26 UNCLAIMED<br>\
+708 <b>lshw</b>           description: System peripheral<br>\
+709 <b>lshw</b>           product: Sky Lake-E CHA Registers<br>\
+710 <b>lshw</b>           vendor: Intel Corporation<br>\
+711 <b>lshw</b>           physical id: 1d.3<br>\
+712 <b>lshw</b>           bus info: pci@0000:16:1d.3<br>\
+713 <b>lshw</b>           version: 04<br>\
+714 <b>lshw</b>           width: 32 bits<br>\
+715 <b>lshw</b>           clock: 33MHz<br>\
+716 <b>lshw</b>           configuration: latency=0<br>\
+717 <b>lshw</b>      *-generic:27 UNCLAIMED<br>\
+718 <b>lshw</b>           description: System peripheral<br>\
+719 <b>lshw</b>           product: Sky Lake-E PCU Registers<br>\
+720 <b>lshw</b>           vendor: Intel Corporation<br>\
+721 <b>lshw</b>           physical id: 1e<br>\
+722 <b>lshw</b>           bus info: pci@0000:16:1e.0<br>\
+723 <b>lshw</b>           version: 04<br>\
+724 <b>lshw</b>           width: 32 bits<br>\
+725 <b>lshw</b>           clock: 33MHz<br>\
+726 <b>lshw</b>           configuration: latency=0<br>\
+727 <b>lshw</b>      *-generic:28 UNCLAIMED<br>\
+728 <b>lshw</b>           description: System peripheral<br>\
+729 <b>lshw</b>           product: Sky Lake-E PCU Registers<br>\
+730 <b>lshw</b>           vendor: Intel Corporation<br>\
+731 <b>lshw</b>           physical id: 1e.1<br>\
+732 <b>lshw</b>           bus info: pci@0000:16:1e.1<br>\
+733 <b>lshw</b>           version: 04<br>\
+734 <b>lshw</b>           width: 32 bits<br>\
+735 <b>lshw</b>           clock: 33MHz<br>\
+736 <b>lshw</b>           configuration: latency=0<br>\
+737 <b>lshw</b>      *-generic:29 UNCLAIMED<br>\
+738 <b>lshw</b>           description: System peripheral<br>\
+739 <b>lshw</b>           product: Sky Lake-E PCU Registers<br>\
+740 <b>lshw</b>           vendor: Intel Corporation<br>\
+741 <b>lshw</b>           physical id: 1e.2<br>\
+742 <b>lshw</b>           bus info: pci@0000:16:1e.2<br>\
+743 <b>lshw</b>           version: 04<br>\
+744 <b>lshw</b>           width: 32 bits<br>\
+745 <b>lshw</b>           clock: 33MHz<br>\
+746 <b>lshw</b>           configuration: latency=0<br>\
+747 <b>lshw</b>      *-generic:30 UNCLAIMED<br>\
+748 <b>lshw</b>           description: System peripheral<br>\
+749 <b>lshw</b>           product: Sky Lake-E PCU Registers<br>\
+750 <b>lshw</b>           vendor: Intel Corporation<br>\
+751 <b>lshw</b>           physical id: 1e.3<br>\
+752 <b>lshw</b>           bus info: pci@0000:16:1e.3<br>\
+753 <b>lshw</b>           version: 04<br>\
+754 <b>lshw</b>           width: 32 bits<br>\
+755 <b>lshw</b>           clock: 33MHz<br>\
+756 <b>lshw</b>           configuration: latency=0<br>\
+757 <b>lshw</b>      *-generic:31 UNCLAIMED<br>\
+758 <b>lshw</b>           description: System peripheral<br>\
+759 <b>lshw</b>           product: Sky Lake-E PCU Registers<br>\
+760 <b>lshw</b>           vendor: Intel Corporation<br>\
+761 <b>lshw</b>           physical id: 1e.4<br>\
+762 <b>lshw</b>           bus info: pci@0000:16:1e.4<br>\
+763 <b>lshw</b>           version: 04<br>\
+764 <b>lshw</b>           width: 32 bits<br>\
+765 <b>lshw</b>           clock: 33MHz<br>\
+766 <b>lshw</b>           configuration: latency=0<br>\
+767 <b>lshw</b>      *-generic:32 UNCLAIMED<br>\
+768 <b>lshw</b>           description: System peripheral<br>\
+769 <b>lshw</b>           product: Sky Lake-E PCU Registers<br>\
+770 <b>lshw</b>           vendor: Intel Corporation<br>\
+771 <b>lshw</b>           physical id: 1e.5<br>\
+772 <b>lshw</b>           bus info: pci@0000:16:1e.5<br>\
+773 <b>lshw</b>           version: 04<br>\
+774 <b>lshw</b>           width: 32 bits<br>\
+775 <b>lshw</b>           clock: 33MHz<br>\
+776 <b>lshw</b>           configuration: latency=0<br>\
+777 <b>lshw</b>      *-generic:33 UNCLAIMED<br>\
+778 <b>lshw</b>           description: System peripheral<br>\
+779 <b>lshw</b>           product: Sky Lake-E PCU Registers<br>\
+780 <b>lshw</b>           vendor: Intel Corporation<br>\
+781 <b>lshw</b>           physical id: 1e.6<br>\
+782 <b>lshw</b>           bus info: pci@0000:16:1e.6<br>\
+783 <b>lshw</b>           version: 04<br>\
+784 <b>lshw</b>           width: 32 bits<br>\
+785 <b>lshw</b>           clock: 33MHz<br>\
+786 <b>lshw</b>           configuration: latency=0<br>\
+787 <b>lshw</b>      *-pci:2<br>\
+788 <b>lshw</b>           description: PCI bridge<br>\
+789 <b>lshw</b>           product: Sky Lake-E PCI Express Root Port A<br>\
+790 <b>lshw</b>           vendor: Intel Corporation<br>\
+791 <b>lshw</b>           physical id: 102<br>\
+792 <b>lshw</b>           bus info: pci@0000:64:00.0<br>\
+793 <b>lshw</b>           version: 04<br>\
+794 <b>lshw</b>           width: 64 bits<br>\
+795 <b>lshw</b>           clock: 33MHz<br>\
+796 <b>lshw</b>           capabilities: pci normal_decode bus_master cap_list<br>\
+797 <b>lshw</b>           configuration: driver=pcieport<br>\
+798 <b>lshw</b>           resources: iomemory:2000b0b00-2000b0aff irq:30 ioport:b000(size=4096) memory:d7000000-d80fffff ioport:c0000000(size=301989888)<br>\
+799 <b>lshw</b>         *-display<br>\
+800 <b>lshw</b>              description: VGA compatible controller<br>\
+801 <b>lshw</b>              product: GV100GL [Quadro GV100]<br>\
+802 <b>lshw</b>              vendor: NVIDIA Corporation<br>\
+803 <b>lshw</b>              physical id: 0<br>\
+804 <b>lshw</b>              bus info: pci@0000:65:00.0<br>\
+805 <b>lshw</b>              version: a1<br>\
+806 <b>lshw</b>              width: 64 bits<br>\
+807 <b>lshw</b>              clock: 33MHz<br>\
+808 <b>lshw</b>              capabilities: vga_controller bus_master cap_list rom<br>\
+809 <b>lshw</b>              configuration: driver=nvidia latency=0<br>\
+810 <b>lshw</b>              resources: irq:71 memory:d7000000-d7ffffff memory:c0000000-cfffffff memory:d0000000-d1ffffff ioport:b000(size=128) memory:c0000-dffff<br>\
+811 <b>lshw</b>         *-multimedia<br>\
+812 <b>lshw</b>              description: Audio device<br>\
+813 <b>lshw</b>              product: NVIDIA Corporation<br>\
+814 <b>lshw</b>              vendor: NVIDIA Corporation<br>\
+815 <b>lshw</b>              physical id: 0.1<br>\
+816 <b>lshw</b>              bus info: pci@0000:65:00.1<br>\
+817 <b>lshw</b>              version: a1<br>\
+818 <b>lshw</b>              width: 32 bits<br>\
+819 <b>lshw</b>              clock: 33MHz<br>\
+820 <b>lshw</b>              capabilities: bus_master cap_list<br>\
+821 <b>lshw</b>              configuration: driver=snd_hda_intel latency=0<br>\
+822 <b>lshw</b>              resources: irq:69 memory:d8080000-d8083fff<br>\
+823 <b>lshw</b>      *-generic:34 UNCLAIMED<br>\
+824 <b>lshw</b>           description: System peripheral<br>\
+825 <b>lshw</b>           product: Intel Corporation<br>\
+826 <b>lshw</b>           vendor: Intel Corporation<br>\
+827 <b>lshw</b>           physical id: 8<br>\
+828 <b>lshw</b>           bus info: pci@0000:64:05.0<br>\
+829 <b>lshw</b>           version: 04<br>\
+830 <b>lshw</b>           width: 32 bits<br>\
+831 <b>lshw</b>           clock: 33MHz<br>\
+832 <b>lshw</b>           capabilities: cap_list<br>\
+833 <b>lshw</b>           configuration: latency=0<br>\
+834 <b>lshw</b>      *-generic:35 UNCLAIMED<br>\
+835 <b>lshw</b>           description: System peripheral<br>\
+836 <b>lshw</b>           product: Sky Lake-E RAS Configuration Registers<br>\
+837 <b>lshw</b>           vendor: Intel Corporation<br>\
+838 <b>lshw</b>           physical id: 9<br>\
+839 <b>lshw</b>           bus info: pci@0000:64:05.2<br>\
+840 <b>lshw</b>           version: 04<br>\
+841 <b>lshw</b>           width: 32 bits<br>\
+842 <b>lshw</b>           clock: 33MHz<br>\
+843 <b>lshw</b>           capabilities: cap_list<br>\
+844 <b>lshw</b>           configuration: latency=0<br>\
+845 <b>lshw</b>      *-generic:36 UNCLAIMED<br>\
+846 <b>lshw</b>           description: PIC<br>\
+847 <b>lshw</b>           product: Intel Corporation<br>\
+848 <b>lshw</b>           vendor: Intel Corporation<br>\
+849 <b>lshw</b>           physical id: 10<br>\
+850 <b>lshw</b>           bus info: pci@0000:64:05.4<br>\
+851 <b>lshw</b>           version: 04<br>\
+852 <b>lshw</b>           width: 32 bits<br>\
+853 <b>lshw</b>           clock: 33MHz<br>\
+854 <b>lshw</b>           capabilities: io_x_-apic bus_master cap_list<br>\
+855 <b>lshw</b>           configuration: latency=0<br>\
+856 <b>lshw</b>           resources: memory:d8100000-d8100fff<br>\
+857 <b>lshw</b>      *-generic:37<br>\
+858 <b>lshw</b>           description: System peripheral<br>\
+859 <b>lshw</b>           product: Intel Corporation<br>\
+860 <b>lshw</b>           vendor: Intel Corporation<br>\
+861 <b>lshw</b>           physical id: 11<br>\
+862 <b>lshw</b>           bus info: pci@0000:64:08.0<br>\
+863 <b>lshw</b>           version: 04<br>\
+864 <b>lshw</b>           width: 32 bits<br>\
+865 <b>lshw</b>           clock: 33MHz<br>\
+866 <b>lshw</b>           capabilities: cap_list<br>\
+867 <b>lshw</b>           configuration: driver=skx_uncore latency=0<br>\
+868 <b>lshw</b>           resources: irq:0<br>\
+869 <b>lshw</b>      *-generic:38<br>\
+870 <b>lshw</b>           description: System peripheral<br>\
+871 <b>lshw</b>           product: Intel Corporation<br>\
+872 <b>lshw</b>           vendor: Intel Corporation<br>\
+873 <b>lshw</b>           physical id: 13<br>\
+874 <b>lshw</b>           bus info: pci@0000:64:09.0<br>\
+875 <b>lshw</b>           version: 04<br>\
+876 <b>lshw</b>           width: 32 bits<br>\
+877 <b>lshw</b>           clock: 33MHz<br>\
+878 <b>lshw</b>           capabilities: cap_list<br>\
+879 <b>lshw</b>           configuration: driver=skx_uncore latency=0<br>\
+880 <b>lshw</b>           resources: irq:0<br>\
+881 <b>lshw</b>      *-generic:39 UNCLAIMED<br>\
+882 <b>lshw</b>           description: System peripheral<br>\
+883 <b>lshw</b>           product: Intel Corporation<br>\
+884 <b>lshw</b>           vendor: Intel Corporation<br>\
+885 <b>lshw</b>           physical id: a<br>\
+886 <b>lshw</b>           bus info: pci@0000:64:0a.0<br>\
+887 <b>lshw</b>           version: 04<br>\
+888 <b>lshw</b>           width: 32 bits<br>\
+889 <b>lshw</b>           clock: 33MHz<br>\
+890 <b>lshw</b>           capabilities: cap_list<br>\
+891 <b>lshw</b>           configuration: latency=0<br>\
+892 <b>lshw</b>      *-generic:40 UNCLAIMED<br>\
+893 <b>lshw</b>           description: System peripheral<br>\
+894 <b>lshw</b>           product: Intel Corporation<br>\
+895 <b>lshw</b>           vendor: Intel Corporation<br>\
+896 <b>lshw</b>           physical id: a.1<br>\
+897 <b>lshw</b>           bus info: pci@0000:64:0a.1<br>\
+898 <b>lshw</b>           version: 04<br>\
+899 <b>lshw</b>           width: 32 bits<br>\
+900 <b>lshw</b>           clock: 33MHz<br>\
+901 <b>lshw</b>           capabilities: cap_list<br>\
+902 <b>lshw</b>           configuration: latency=0<br>\
+903 <b>lshw</b>      *-generic:41<br>\
+904 <b>lshw</b>           description: System peripheral<br>\
+905 <b>lshw</b>           product: Intel Corporation<br>\
+906 <b>lshw</b>           vendor: Intel Corporation<br>\
+907 <b>lshw</b>           physical id: a.2<br>\
+908 <b>lshw</b>           bus info: pci@0000:64:0a.2<br>\
+909 <b>lshw</b>           version: 04<br>\
+910 <b>lshw</b>           width: 32 bits<br>\
+911 <b>lshw</b>           clock: 33MHz<br>\
+912 <b>lshw</b>           capabilities: cap_list<br>\
+913 <b>lshw</b>           configuration: driver=skx_uncore latency=0<br>\
+914 <b>lshw</b>           resources: irq:0<br>\
+915 <b>lshw</b>      *-generic:42 UNCLAIMED<br>\
+916 <b>lshw</b>           description: System peripheral<br>\
+917 <b>lshw</b>           product: Intel Corporation<br>\
+918 <b>lshw</b>           vendor: Intel Corporation<br>\
+919 <b>lshw</b>           physical id: a.3<br>\
+920 <b>lshw</b>           bus info: pci@0000:64:0a.3<br>\
+921 <b>lshw</b>           version: 04<br>\
+922 <b>lshw</b>           width: 32 bits<br>\
+923 <b>lshw</b>           clock: 33MHz<br>\
+924 <b>lshw</b>           capabilities: cap_list<br>\
+925 <b>lshw</b>           configuration: latency=0<br>\
+926 <b>lshw</b>      *-generic:43 UNCLAIMED<br>\
+927 <b>lshw</b>           description: System peripheral<br>\
+928 <b>lshw</b>           product: Intel Corporation<br>\
+929 <b>lshw</b>           vendor: Intel Corporation<br>\
+930 <b>lshw</b>           physical id: a.4<br>\
+931 <b>lshw</b>           bus info: pci@0000:64:0a.4<br>\
+932 <b>lshw</b>           version: 04<br>\
+933 <b>lshw</b>           width: 32 bits<br>\
+934 <b>lshw</b>           clock: 33MHz<br>\
+935 <b>lshw</b>           capabilities: cap_list<br>\
+936 <b>lshw</b>           configuration: latency=0<br>\
+937 <b>lshw</b>      *-generic:44 UNCLAIMED<br>\
+938 <b>lshw</b>           description: System peripheral<br>\
+939 <b>lshw</b>           product: Intel Corporation<br>\
+940 <b>lshw</b>           vendor: Intel Corporation<br>\
+941 <b>lshw</b>           physical id: a.5<br>\
+942 <b>lshw</b>           bus info: pci@0000:64:0a.5<br>\
+943 <b>lshw</b>           version: 04<br>\
+944 <b>lshw</b>           width: 32 bits<br>\
+945 <b>lshw</b>           clock: 33MHz<br>\
+946 <b>lshw</b>           capabilities: cap_list<br>\
+947 <b>lshw</b>           configuration: latency=0<br>\
+948 <b>lshw</b>      *-generic:45<br>\
+949 <b>lshw</b>           description: System peripheral<br>\
+950 <b>lshw</b>           product: Intel Corporation<br>\
+951 <b>lshw</b>           vendor: Intel Corporation<br>\
+952 <b>lshw</b>           physical id: a.6<br>\
+953 <b>lshw</b>           bus info: pci@0000:64:0a.6<br>\
+954 <b>lshw</b>           version: 04<br>\
+955 <b>lshw</b>           width: 32 bits<br>\
+956 <b>lshw</b>           clock: 33MHz<br>\
+957 <b>lshw</b>           capabilities: cap_list<br>\
+958 <b>lshw</b>           configuration: driver=skx_uncore latency=0<br>\
+959 <b>lshw</b>           resources: irq:0<br>\
+960 <b>lshw</b>      *-generic:46 UNCLAIMED<br>\
+961 <b>lshw</b>           description: System peripheral<br>\
+962 <b>lshw</b>           product: Intel Corporation<br>\
+963 <b>lshw</b>           vendor: Intel Corporation<br>\
+964 <b>lshw</b>           physical id: a.7<br>\
+965 <b>lshw</b>           bus info: pci@0000:64:0a.7<br>\
+966 <b>lshw</b>           version: 04<br>\
+967 <b>lshw</b>           width: 32 bits<br>\
+968 <b>lshw</b>           clock: 33MHz<br>\
+969 <b>lshw</b>           capabilities: cap_list<br>\
+970 <b>lshw</b>           configuration: latency=0<br>\
+971 <b>lshw</b>      *-generic:47 UNCLAIMED<br>\
+972 <b>lshw</b>           description: System peripheral<br>\
+973 <b>lshw</b>           product: Intel Corporation<br>\
+974 <b>lshw</b>           vendor: Intel Corporation<br>\
+975 <b>lshw</b>           physical id: b<br>\
+976 <b>lshw</b>           bus info: pci@0000:64:0b.0<br>\
+977 <b>lshw</b>           version: 04<br>\
+978 <b>lshw</b>           width: 32 bits<br>\
+979 <b>lshw</b>           clock: 33MHz<br>\
+980 <b>lshw</b>           capabilities: cap_list<br>\
+981 <b>lshw</b>           configuration: latency=0<br>\
+982 <b>lshw</b>      *-generic:48 UNCLAIMED<br>\
+983 <b>lshw</b>           description: System peripheral<br>\
+984 <b>lshw</b>           product: Intel Corporation<br>\
+985 <b>lshw</b>           vendor: Intel Corporation<br>\
+986 <b>lshw</b>           physical id: b.1<br>\
+987 <b>lshw</b>           bus info: pci@0000:64:0b.1<br>\
+988 <b>lshw</b>           version: 04<br>\
+989 <b>lshw</b>           width: 32 bits<br>\
+990 <b>lshw</b>           clock: 33MHz<br>\
+991 <b>lshw</b>           capabilities: cap_list<br>\
+992 <b>lshw</b>           configuration: latency=0<br>\
+993 <b>lshw</b>      *-generic:49<br>\
+994 <b>lshw</b>           description: System peripheral<br>\
+995 <b>lshw</b>           product: Intel Corporation<br>\
+996 <b>lshw</b>           vendor: Intel Corporation<br>\
+997 <b>lshw</b>           physical id: b.2<br>\
+998 <b>lshw</b>           bus info: pci@0000:64:0b.2<br>\
+999 <b>lshw</b>           version: 04<br>\
+1000 <b>lshw</b>           width: 32 bits<br>\
+1001 <b>lshw</b>           clock: 33MHz<br>\
+1002 <b>lshw</b>           capabilities: cap_list<br>\
+1003 <b>lshw</b>           configuration: driver=skx_uncore latency=0<br>\
+1004 <b>lshw</b>           resources: irq:0<br>\
+1005 <b>lshw</b>      *-generic:50 UNCLAIMED<br>\
+1006 <b>lshw</b>           description: System peripheral<br>\
+1007 <b>lshw</b>           product: Intel Corporation<br>\
+1008 <b>lshw</b>           vendor: Intel Corporation<br>\
+1009 <b>lshw</b>           physical id: b.3<br>\
+1010 <b>lshw</b>           bus info: pci@0000:64:0b.3<br>\
+1011 <b>lshw</b>           version: 04<br>\
+1012 <b>lshw</b>           width: 32 bits<br>\
+1013 <b>lshw</b>           clock: 33MHz<br>\
+1014 <b>lshw</b>           capabilities: cap_list<br>\
+1015 <b>lshw</b>           configuration: latency=0<br>\
+1016 <b>lshw</b>      *-generic:51 UNCLAIMED<br>\
+1017 <b>lshw</b>           description: System peripheral<br>\
+1018 <b>lshw</b>           product: Intel Corporation<br>\
+1019 <b>lshw</b>           vendor: Intel Corporation<br>\
+1020 <b>lshw</b>           physical id: c<br>\
+1021 <b>lshw</b>           bus info: pci@0000:64:0c.0<br>\
+1022 <b>lshw</b>           version: 04<br>\
+1023 <b>lshw</b>           width: 32 bits<br>\
+1024 <b>lshw</b>           clock: 33MHz<br>\
+1025 <b>lshw</b>           capabilities: cap_list<br>\
+1026 <b>lshw</b>           configuration: latency=0<br>\
+1027 <b>lshw</b>      *-generic:52 UNCLAIMED<br>\
+1028 <b>lshw</b>           description: System peripheral<br>\
+1029 <b>lshw</b>           product: Intel Corporation<br>\
+1030 <b>lshw</b>           vendor: Intel Corporation<br>\
+1031 <b>lshw</b>           physical id: c.1<br>\
+1032 <b>lshw</b>           bus info: pci@0000:64:0c.1<br>\
+1033 <b>lshw</b>           version: 04<br>\
+1034 <b>lshw</b>           width: 32 bits<br>\
+1035 <b>lshw</b>           clock: 33MHz<br>\
+1036 <b>lshw</b>           capabilities: cap_list<br>\
+1037 <b>lshw</b>           configuration: latency=0<br>\
+1038 <b>lshw</b>      *-generic:53<br>\
+1039 <b>lshw</b>           description: System peripheral<br>\
+1040 <b>lshw</b>           product: Intel Corporation<br>\
+1041 <b>lshw</b>           vendor: Intel Corporation<br>\
+1042 <b>lshw</b>           physical id: c.2<br>\
+1043 <b>lshw</b>           bus info: pci@0000:64:0c.2<br>\
+1044 <b>lshw</b>           version: 04<br>\
+1045 <b>lshw</b>           width: 32 bits<br>\
+1046 <b>lshw</b>           clock: 33MHz<br>\
+1047 <b>lshw</b>           capabilities: cap_list<br>\
+1048 <b>lshw</b>           configuration: driver=skx_uncore latency=0<br>\
+1049 <b>lshw</b>           resources: irq:0<br>\
+1050 <b>lshw</b>      *-generic:54 UNCLAIMED<br>\
+1051 <b>lshw</b>           description: System peripheral<br>\
+1052 <b>lshw</b>           product: Intel Corporation<br>\
+1053 <b>lshw</b>           vendor: Intel Corporation<br>\
+1054 <b>lshw</b>           physical id: c.3<br>\
+1055 <b>lshw</b>           bus info: pci@0000:64:0c.3<br>\
+1056 <b>lshw</b>           version: 04<br>\
+1057 <b>lshw</b>           width: 32 bits<br>\
+1058 <b>lshw</b>           clock: 33MHz<br>\
+1059 <b>lshw</b>           capabilities: cap_list<br>\
+1060 <b>lshw</b>           configuration: latency=0<br>\
+1061 <b>lshw</b>      *-generic:55 UNCLAIMED<br>\
+1062 <b>lshw</b>           description: System peripheral<br>\
+1063 <b>lshw</b>           product: Intel Corporation<br>\
+1064 <b>lshw</b>           vendor: Intel Corporation<br>\
+1065 <b>lshw</b>           physical id: c.4<br>\
+1066 <b>lshw</b>           bus info: pci@0000:64:0c.4<br>\
+1067 <b>lshw</b>           version: 04<br>\
+1068 <b>lshw</b>           width: 32 bits<br>\
+1069 <b>lshw</b>           clock: 33MHz<br>\
+1070 <b>lshw</b>           capabilities: cap_list<br>\
+1071 <b>lshw</b>           configuration: latency=0<br>\
+1072 <b>lshw</b>      *-generic:56 UNCLAIMED<br>\
+1073 <b>lshw</b>           description: System peripheral<br>\
+1074 <b>lshw</b>           product: Intel Corporation<br>\
+1075 <b>lshw</b>           vendor: Intel Corporation<br>\
+1076 <b>lshw</b>           physical id: c.5<br>\
+1077 <b>lshw</b>           bus info: pci@0000:64:0c.5<br>\
+1078 <b>lshw</b>           version: 04<br>\
+1079 <b>lshw</b>           width: 32 bits<br>\
+1080 <b>lshw</b>           clock: 33MHz<br>\
+1081 <b>lshw</b>           capabilities: cap_list<br>\
+1082 <b>lshw</b>           configuration: latency=0<br>\
+1083 <b>lshw</b>      *-generic:57<br>\
+1084 <b>lshw</b>           description: System peripheral<br>\
+1085 <b>lshw</b>           product: Intel Corporation<br>\
+1086 <b>lshw</b>           vendor: Intel Corporation<br>\
+1087 <b>lshw</b>           physical id: c.6<br>\
+1088 <b>lshw</b>           bus info: pci@0000:64:0c.6<br>\
+1089 <b>lshw</b>           version: 04<br>\
+1090 <b>lshw</b>           width: 32 bits<br>\
+1091 <b>lshw</b>           clock: 33MHz<br>\
+1092 <b>lshw</b>           capabilities: cap_list<br>\
+1093 <b>lshw</b>           configuration: driver=skx_uncore latency=0<br>\
+1094 <b>lshw</b>           resources: irq:0<br>\
+1095 <b>lshw</b>      *-generic:58 UNCLAIMED<br>\
+1096 <b>lshw</b>           description: System peripheral<br>\
+1097 <b>lshw</b>           product: Intel Corporation<br>\
+1098 <b>lshw</b>           vendor: Intel Corporation<br>\
+1099 <b>lshw</b>           physical id: c.7<br>\
+1100 <b>lshw</b>           bus info: pci@0000:64:0c.7<br>\
+1101 <b>lshw</b>           version: 04<br>\
+1102 <b>lshw</b>           width: 32 bits<br>\
+1103 <b>lshw</b>           clock: 33MHz<br>\
+1104 <b>lshw</b>           capabilities: cap_list<br>\
+1105 <b>lshw</b>           configuration: latency=0<br>\
+1106 <b>lshw</b>      *-generic:59 UNCLAIMED<br>\
+1107 <b>lshw</b>           description: System peripheral<br>\
+1108 <b>lshw</b>           product: Intel Corporation<br>\
+1109 <b>lshw</b>           vendor: Intel Corporation<br>\
+1110 <b>lshw</b>           physical id: d<br>\
+1111 <b>lshw</b>           bus info: pci@0000:64:0d.0<br>\
+1112 <b>lshw</b>           version: 04<br>\
+1113 <b>lshw</b>           width: 32 bits<br>\
+1114 <b>lshw</b>           clock: 33MHz<br>\
+1115 <b>lshw</b>           capabilities: cap_list<br>\
+1116 <b>lshw</b>           configuration: latency=0<br>\
+1117 <b>lshw</b>      *-generic:60 UNCLAIMED<br>\
+1118 <b>lshw</b>           description: System peripheral<br>\
+1119 <b>lshw</b>           product: Intel Corporation<br>\
+1120 <b>lshw</b>           vendor: Intel Corporation<br>\
+1121 <b>lshw</b>           physical id: d.1<br>\
+1122 <b>lshw</b>           bus info: pci@0000:64:0d.1<br>\
+1123 <b>lshw</b>           version: 04<br>\
+1124 <b>lshw</b>           width: 32 bits<br>\
+1125 <b>lshw</b>           clock: 33MHz<br>\
+1126 <b>lshw</b>           capabilities: cap_list<br>\
+1127 <b>lshw</b>           configuration: latency=0<br>\
+1128 <b>lshw</b>      *-generic:61<br>\
+1129 <b>lshw</b>           description: System peripheral<br>\
+1130 <b>lshw</b>           product: Intel Corporation<br>\
+1131 <b>lshw</b>           vendor: Intel Corporation<br>\
+1132 <b>lshw</b>           physical id: d.2<br>\
+1133 <b>lshw</b>           bus info: pci@0000:64:0d.2<br>\
+1134 <b>lshw</b>           version: 04<br>\
+1135 <b>lshw</b>           width: 32 bits<br>\
+1136 <b>lshw</b>           clock: 33MHz<br>\
+1137 <b>lshw</b>           capabilities: cap_list<br>\
+1138 <b>lshw</b>           configuration: driver=skx_uncore latency=0<br>\
+1139 <b>lshw</b>           resources: irq:0<br>\
+1140 <b>lshw</b>      *-generic:62 UNCLAIMED<br>\
+1141 <b>lshw</b>           description: System peripheral<br>\
+1142 <b>lshw</b>           product: Intel Corporation<br>\
+1143 <b>lshw</b>           vendor: Intel Corporation<br>\
+1144 <b>lshw</b>           physical id: d.3<br>\
+1145 <b>lshw</b>           bus info: pci@0000:64:0d.3<br>\
+1146 <b>lshw</b>           version: 04<br>\
+1147 <b>lshw</b>           width: 32 bits<br>\
+1148 <b>lshw</b>           clock: 33MHz<br>\
+1149 <b>lshw</b>           capabilities: cap_list<br>\
+1150 <b>lshw</b>           configuration: latency=0<br>\
+1151 <b>lshw</b>      *-generic:63 UNCLAIMED<br>\
+1152 <b>lshw</b>           description: System peripheral<br>\
+1153 <b>lshw</b>           product: Intel Corporation<br>\
+1154 <b>lshw</b>           vendor: Intel Corporation<br>\
+1155 <b>lshw</b>           physical id: 5<br>\
+1156 <b>lshw</b>           bus info: pci@0000:b2:05.0<br>\
+1157 <b>lshw</b>           version: 04<br>\
+1158 <b>lshw</b>           width: 32 bits<br>\
+1159 <b>lshw</b>           clock: 33MHz<br>\
+1160 <b>lshw</b>           capabilities: cap_list<br>\
+1161 <b>lshw</b>           configuration: latency=0<br>\
+1162 <b>lshw</b>      *-generic:64 UNCLAIMED<br>\
+1163 <b>lshw</b>           description: System peripheral<br>\
+1164 <b>lshw</b>           product: Sky Lake-E RAS Configuration Registers<br>\
+1165 <b>lshw</b>           vendor: Intel Corporation<br>\
+1166 <b>lshw</b>           physical id: 5.2<br>\
+1167 <b>lshw</b>           bus info: pci@0000:b2:05.2<br>\
+1168 <b>lshw</b>           version: 04<br>\
+1169 <b>lshw</b>           width: 32 bits<br>\
+1170 <b>lshw</b>           clock: 33MHz<br>\
+1171 <b>lshw</b>           capabilities: cap_list<br>\
+1172 <b>lshw</b>           configuration: latency=0<br>\
+1173 <b>lshw</b>      *-generic:65 UNCLAIMED<br>\
+1174 <b>lshw</b>           description: PIC<br>\
+1175 <b>lshw</b>           product: Intel Corporation<br>\
+1176 <b>lshw</b>           vendor: Intel Corporation<br>\
+1177 <b>lshw</b>           physical id: 5.4<br>\
+1178 <b>lshw</b>           bus info: pci@0000:b2:05.4<br>\
+1179 <b>lshw</b>           version: 04<br>\
+1180 <b>lshw</b>           width: 32 bits<br>\
+1181 <b>lshw</b>           clock: 33MHz<br>\
+1182 <b>lshw</b>           capabilities: io_x_-apic bus_master cap_list<br>\
+1183 <b>lshw</b>           configuration: latency=0<br>\
+1184 <b>lshw</b>           resources: memory:fbf00000-fbf00fff<br>\
+1185 <b>lshw</b>      *-generic:66<br>\
+1186 <b>lshw</b>           description: Performance counters<br>\
+1187 <b>lshw</b>           product: Sky Lake-E M3KTI Registers<br>\
+1188 <b>lshw</b>           vendor: Intel Corporation<br>\
+1189 <b>lshw</b>           physical id: 12<br>\
+1190 <b>lshw</b>           bus info: pci@0000:b2:12.0<br>\
+1191 <b>lshw</b>           version: 04<br>\
+1192 <b>lshw</b>           width: 32 bits<br>\
+1193 <b>lshw</b>           clock: 33MHz<br>\
+1194 <b>lshw</b>           capabilities: cap_list<br>\
+1195 <b>lshw</b>           configuration: driver=skx_uncore latency=0<br>\
+1196 <b>lshw</b>           resources: irq:0<br>\
+1197 <b>lshw</b>      *-generic:67<br>\
+1198 <b>lshw</b>           description: Performance counters<br>\
+1199 <b>lshw</b>           product: Sky Lake-E M3KTI Registers<br>\
+1200 <b>lshw</b>           vendor: Intel Corporation<br>\
+1201 <b>lshw</b>           physical id: 12.1<br>\
+1202 <b>lshw</b>           bus info: pci@0000:b2:12.1<br>\
+1203 <b>lshw</b>           version: 04<br>\
+1204 <b>lshw</b>           width: 32 bits<br>\
+1205 <b>lshw</b>           clock: 33MHz<br>\
+1206 <b>lshw</b>           configuration: driver=skx_uncore latency=0<br>\
+1207 <b>lshw</b>           resources: irq:0<br>\
+1208 <b>lshw</b>      *-generic:68 UNCLAIMED<br>\
+1209 <b>lshw</b>           description: System peripheral<br>\
+1210 <b>lshw</b>           product: Sky Lake-E M3KTI Registers<br>\
+1211 <b>lshw</b>           vendor: Intel Corporation<br>\
+1212 <b>lshw</b>           physical id: 12.2<br>\
+1213 <b>lshw</b>           bus info: pci@0000:b2:12.2<br>\
+1214 <b>lshw</b>           version: 04<br>\
+1215 <b>lshw</b>           width: 32 bits<br>\
+1216 <b>lshw</b>           clock: 33MHz<br>\
+1217 <b>lshw</b>           configuration: latency=0<br>\
+1218 <b>lshw</b>      *-generic:69 UNCLAIMED<br>\
+1219 <b>lshw</b>           description: System peripheral<br>\
+1220 <b>lshw</b>           product: Sky Lake-E M2PCI Registers<br>\
+1221 <b>lshw</b>           vendor: Intel Corporation<br>\
+1222 <b>lshw</b>           physical id: 15<br>\
+1223 <b>lshw</b>           bus info: pci@0000:b2:15.0<br>\
+1224 <b>lshw</b>           version: 04<br>\
+1225 <b>lshw</b>           width: 32 bits<br>\
+1226 <b>lshw</b>           clock: 33MHz<br>\
+1227 <b>lshw</b>           configuration: latency=0<br>\
+1228 <b>lshw</b>      *-generic:70 UNCLAIMED<br>\
+1229 <b>lshw</b>           description: System peripheral<br>\
+1230 <b>lshw</b>           product: Sky Lake-E M2PCI Registers<br>\
+1231 <b>lshw</b>           vendor: Intel Corporation<br>\
+1232 <b>lshw</b>           physical id: 16<br>\
+1233 <b>lshw</b>           bus info: pci@0000:b2:16.0<br>\
+1234 <b>lshw</b>           version: 04<br>\
+1235 <b>lshw</b>           width: 32 bits<br>\
+1236 <b>lshw</b>           clock: 33MHz<br>\
+1237 <b>lshw</b>           configuration: latency=0<br>\
+1238 <b>lshw</b>      *-generic:71 UNCLAIMED<br>\
+1239 <b>lshw</b>           description: System peripheral<br>\
+1240 <b>lshw</b>           product: Sky Lake-E M2PCI Registers<br>\
+1241 <b>lshw</b>           vendor: Intel Corporation<br>\
+1242 <b>lshw</b>           physical id: 16.4<br>\
+1243 <b>lshw</b>           bus info: pci@0000:b2:16.4<br>\
+1244 <b>lshw</b>           version: 04<br>\
+1245 <b>lshw</b>           width: 32 bits<br>\
+1246 <b>lshw</b>           clock: 33MHz<br>\
+1247 <b>lshw</b>           configuration: latency=0<br>\
+1248 <b>lshw</b>      *-generic:72 UNCLAIMED<br>\
+1249 <b>lshw</b>           description: System peripheral<br>\
+1250 <b>lshw</b>           product: Sky Lake-E M2PCI Registers<br>\
+1251 <b>lshw</b>           vendor: Intel Corporation<br>\
+1252 <b>lshw</b>           physical id: 17<br>\
+1253 <b>lshw</b>           bus info: pci@0000:b2:17.0<br>\
+1254 <b>lshw</b>           version: 04<br>\
+1255 <b>lshw</b>           width: 32 bits<br>\
+1256 <b>lshw</b>           clock: 33MHz<br>\
+1257 <b>lshw</b>           configuration: latency=0<br>\
+1258 <b>lshw</b>      *-scsi<br>\
+1259 <b>lshw</b>           physical id: 14<br>\
+1260 <b>lshw</b>           logical name: scsi1<br>\
+1261 <b>lshw</b>           capabilities: emulated<br>\
+1262 <b>lshw</b>         *-cdrom<br>\
+1263 <b>lshw</b>              description: DVD-RAM writer<br>\
+1264 <b>lshw</b>              product: DVDRAM GH24NSC0<br>\
+1265 <b>lshw</b>              vendor: HL-DT-ST<br>\
+1266 <b>lshw</b>              physical id: 0.0.0<br>\
+1267 <b>lshw</b>              bus info: scsi@1:0.0.0<br>\
+1268 <b>lshw</b>              logical name: /dev/cdrom<br>\
+1269 <b>lshw</b>              logical name: /dev/cdrw<br>\
+1270 <b>lshw</b>              logical name: /dev/dvd<br>\
+1271 <b>lshw</b>              logical name: /dev/dvdrw<br>\
+1272 <b>lshw</b>              logical name: /dev/sr0<br>\
+1273 <b>lshw</b>              version: LI00<br>\
+1274 <b>lshw</b>              capabilities: removable audio cd-r cd-rw dvd dvd-r dvd-ram<br>\
+1275 <b>lshw</b>              configuration: ansiversion=5 status=nodisc<br>\
+1276 <b>lshw</b>   *-network:0<br>\
+1277 <b>lshw</b>        description: Ethernet interface<br>\
+1278 <b>lshw</b>        physical id: 1<br>\
+1279 <b>lshw</b>        logical name: veth5474953<br>\
+1280 <b>lshw</b>        serial: ae:de:1d:03:b6:55<br>\
+1281 <b>lshw</b>        size: 10Gbit/s<br>\
+1282 <b>lshw</b>        capabilities: ethernet physical<br>\
+1283 <b>lshw</b>        configuration: autonegotiation=off broadcast=yes driver=veth driverversion=1.0 duplex=full link=yes multicast=yes port=twisted pair speed=10Gbit/s<br>\
+1284 <b>lshw</b>   *-network:1<br>\
+1285 <b>lshw</b>        description: Ethernet interface<br>\
+1286 <b>lshw</b>        physical id: 2<br>\
+1287 <b>lshw</b>        logical name: veth52796bc<br>\
+1288 <b>lshw</b>        serial: f2:c3:79:31:7e:e8<br>\
+1289 <b>lshw</b>        size: 10Gbit/s<br>\
+1290 <b>lshw</b>        capabilities: ethernet physical<br>\
+1291 <b>lshw</b>        configuration: autonegotiation=off broadcast=yes driver=veth driverversion=1.0 duplex=full link=yes multicast=yes port=twisted pair speed=10Gbit/s<br>\
+1292 <b>/proc/cpuinfo</b> <br>\
+1293 <b>/proc/cpuinfo</b> processor	: 0<br>\
+1294 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1295 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1296 <b>/proc/cpuinfo</b> model		: 85<br>\
+1297 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1298 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1299 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1300 <b>/proc/cpuinfo</b> cpu MHz		: 1200.162<br>\
+1301 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1302 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1303 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1304 <b>/proc/cpuinfo</b> core id		: 0<br>\
+1305 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1306 <b>/proc/cpuinfo</b> apicid		: 0<br>\
+1307 <b>/proc/cpuinfo</b> initial apicid	: 0<br>\
+1308 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1309 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1310 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1311 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1312 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1313 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1314 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1315 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1316 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1317 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1318 <b>/proc/cpuinfo</b> power management:<br>\
+1319 <b>/proc/cpuinfo</b> <br>\
+1320 <b>/proc/cpuinfo</b> processor	: 1<br>\
+1321 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1322 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1323 <b>/proc/cpuinfo</b> model		: 85<br>\
+1324 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1325 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1326 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1327 <b>/proc/cpuinfo</b> cpu MHz		: 3628.606<br>\
+1328 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1329 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1330 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1331 <b>/proc/cpuinfo</b> core id		: 1<br>\
+1332 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1333 <b>/proc/cpuinfo</b> apicid		: 2<br>\
+1334 <b>/proc/cpuinfo</b> initial apicid	: 2<br>\
+1335 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1336 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1337 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1338 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1339 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1340 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1341 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1342 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1343 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1344 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1345 <b>/proc/cpuinfo</b> power management:<br>\
+1346 <b>/proc/cpuinfo</b> <br>\
+1347 <b>/proc/cpuinfo</b> processor	: 2<br>\
+1348 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1349 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1350 <b>/proc/cpuinfo</b> model		: 85<br>\
+1351 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1352 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1353 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1354 <b>/proc/cpuinfo</b> cpu MHz		: 1200.104<br>\
+1355 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1356 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1357 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1358 <b>/proc/cpuinfo</b> core id		: 2<br>\
+1359 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1360 <b>/proc/cpuinfo</b> apicid		: 4<br>\
+1361 <b>/proc/cpuinfo</b> initial apicid	: 4<br>\
+1362 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1363 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1364 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1365 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1366 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1367 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1368 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1369 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1370 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1371 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1372 <b>/proc/cpuinfo</b> power management:<br>\
+1373 <b>/proc/cpuinfo</b> <br>\
+1374 <b>/proc/cpuinfo</b> processor	: 3<br>\
+1375 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1376 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1377 <b>/proc/cpuinfo</b> model		: 85<br>\
+1378 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1379 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1380 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1381 <b>/proc/cpuinfo</b> cpu MHz		: 1200.103<br>\
+1382 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1383 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1384 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1385 <b>/proc/cpuinfo</b> core id		: 3<br>\
+1386 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1387 <b>/proc/cpuinfo</b> apicid		: 6<br>\
+1388 <b>/proc/cpuinfo</b> initial apicid	: 6<br>\
+1389 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1390 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1391 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1392 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1393 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1394 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1395 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1396 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1397 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1398 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1399 <b>/proc/cpuinfo</b> power management:<br>\
+1400 <b>/proc/cpuinfo</b> <br>\
+1401 <b>/proc/cpuinfo</b> processor	: 4<br>\
+1402 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1403 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1404 <b>/proc/cpuinfo</b> model		: 85<br>\
+1405 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1406 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1407 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1408 <b>/proc/cpuinfo</b> cpu MHz		: 1200.018<br>\
+1409 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1410 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1411 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1412 <b>/proc/cpuinfo</b> core id		: 4<br>\
+1413 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1414 <b>/proc/cpuinfo</b> apicid		: 8<br>\
+1415 <b>/proc/cpuinfo</b> initial apicid	: 8<br>\
+1416 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1417 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1418 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1419 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1420 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1421 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1422 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1423 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1424 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1425 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1426 <b>/proc/cpuinfo</b> power management:<br>\
+1427 <b>/proc/cpuinfo</b> <br>\
+1428 <b>/proc/cpuinfo</b> processor	: 5<br>\
+1429 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1430 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1431 <b>/proc/cpuinfo</b> model		: 85<br>\
+1432 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1433 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1434 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1435 <b>/proc/cpuinfo</b> cpu MHz		: 1209.140<br>\
+1436 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1437 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1438 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1439 <b>/proc/cpuinfo</b> core id		: 5<br>\
+1440 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1441 <b>/proc/cpuinfo</b> apicid		: 10<br>\
+1442 <b>/proc/cpuinfo</b> initial apicid	: 10<br>\
+1443 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1444 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1445 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1446 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1447 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1448 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1449 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1450 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1451 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1452 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1453 <b>/proc/cpuinfo</b> power management:<br>\
+1454 <b>/proc/cpuinfo</b> <br>\
+1455 <b>/proc/cpuinfo</b> processor	: 6<br>\
+1456 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1457 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1458 <b>/proc/cpuinfo</b> model		: 85<br>\
+1459 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1460 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1461 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1462 <b>/proc/cpuinfo</b> cpu MHz		: 1200.146<br>\
+1463 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1464 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1465 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1466 <b>/proc/cpuinfo</b> core id		: 0<br>\
+1467 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1468 <b>/proc/cpuinfo</b> apicid		: 1<br>\
+1469 <b>/proc/cpuinfo</b> initial apicid	: 1<br>\
+1470 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1471 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1472 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1473 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1474 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1475 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1476 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1477 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1478 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1479 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1480 <b>/proc/cpuinfo</b> power management:<br>\
+1481 <b>/proc/cpuinfo</b> <br>\
+1482 <b>/proc/cpuinfo</b> processor	: 7<br>\
+1483 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1484 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1485 <b>/proc/cpuinfo</b> model		: 85<br>\
+1486 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1487 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1488 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1489 <b>/proc/cpuinfo</b> cpu MHz		: 1471.049<br>\
+1490 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1491 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1492 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1493 <b>/proc/cpuinfo</b> core id		: 1<br>\
+1494 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1495 <b>/proc/cpuinfo</b> apicid		: 3<br>\
+1496 <b>/proc/cpuinfo</b> initial apicid	: 3<br>\
+1497 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1498 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1499 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1500 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1501 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1502 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1503 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1504 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1505 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1506 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1507 <b>/proc/cpuinfo</b> power management:<br>\
+1508 <b>/proc/cpuinfo</b> <br>\
+1509 <b>/proc/cpuinfo</b> processor	: 8<br>\
+1510 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1511 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1512 <b>/proc/cpuinfo</b> model		: 85<br>\
+1513 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1514 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1515 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1516 <b>/proc/cpuinfo</b> cpu MHz		: 1200.033<br>\
+1517 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1518 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1519 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1520 <b>/proc/cpuinfo</b> core id		: 2<br>\
+1521 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1522 <b>/proc/cpuinfo</b> apicid		: 5<br>\
+1523 <b>/proc/cpuinfo</b> initial apicid	: 5<br>\
+1524 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1525 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1526 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1527 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1528 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1529 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1530 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1531 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1532 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1533 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1534 <b>/proc/cpuinfo</b> power management:<br>\
+1535 <b>/proc/cpuinfo</b> <br>\
+1536 <b>/proc/cpuinfo</b> processor	: 9<br>\
+1537 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1538 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1539 <b>/proc/cpuinfo</b> model		: 85<br>\
+1540 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1541 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1542 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1543 <b>/proc/cpuinfo</b> cpu MHz		: 1200.018<br>\
+1544 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1545 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1546 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1547 <b>/proc/cpuinfo</b> core id		: 3<br>\
+1548 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1549 <b>/proc/cpuinfo</b> apicid		: 7<br>\
+1550 <b>/proc/cpuinfo</b> initial apicid	: 7<br>\
+1551 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1552 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1553 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1554 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1555 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1556 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1557 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1558 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1559 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1560 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1561 <b>/proc/cpuinfo</b> power management:<br>\
+1562 <b>/proc/cpuinfo</b> <br>\
+1563 <b>/proc/cpuinfo</b> processor	: 10<br>\
+1564 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1565 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1566 <b>/proc/cpuinfo</b> model		: 85<br>\
+1567 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1568 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1569 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1570 <b>/proc/cpuinfo</b> cpu MHz		: 1200.086<br>\
+1571 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1572 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1573 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1574 <b>/proc/cpuinfo</b> core id		: 4<br>\
+1575 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1576 <b>/proc/cpuinfo</b> apicid		: 9<br>\
+1577 <b>/proc/cpuinfo</b> initial apicid	: 9<br>\
+1578 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1579 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1580 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1581 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1582 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1583 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1584 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1585 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1586 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1587 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1588 <b>/proc/cpuinfo</b> power management:<br>\
+1589 <b>/proc/cpuinfo</b> <br>\
+1590 <b>/proc/cpuinfo</b> processor	: 11<br>\
+1591 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1592 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1593 <b>/proc/cpuinfo</b> model		: 85<br>\
+1594 <b>/proc/cpuinfo</b> model name	: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz<br>\
+1595 <b>/proc/cpuinfo</b> stepping	: 4<br>\
+1596 <b>/proc/cpuinfo</b> microcode	: 0x200005e<br>\
+1597 <b>/proc/cpuinfo</b> cpu MHz		: 1371.506<br>\
+1598 <b>/proc/cpuinfo</b> cache size	: 8448 KB<br>\
+1599 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1600 <b>/proc/cpuinfo</b> siblings	: 12<br>\
+1601 <b>/proc/cpuinfo</b> core id		: 5<br>\
+1602 <b>/proc/cpuinfo</b> cpu cores	: 6<br>\
+1603 <b>/proc/cpuinfo</b> apicid		: 11<br>\
+1604 <b>/proc/cpuinfo</b> initial apicid	: 11<br>\
+1605 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1606 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1607 <b>/proc/cpuinfo</b> cpuid level	: 22<br>\
+1608 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1609 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req md_clear flush_l1d<br>\
+1610 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds<br>\
+1611 <b>/proc/cpuinfo</b> bogomips	: 7000.00<br>\
+1612 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1613 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1614 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1615 <b>/proc/cpuinfo</b> power management:<br>\
+1616 <b>/proc/cpuinfo</b> <br>\
+1617 <b>/proc/meminfo</b> <br>\
+1618 <b>/proc/meminfo</b> MemTotal:       32609300 kB<br>\
+1619 <b>/proc/meminfo</b> MemFree:        11843364 kB<br>\
+1620 <b>/proc/meminfo</b> MemAvailable:   24423924 kB<br>\
+1621 <b>/proc/meminfo</b> Buffers:         1338184 kB<br>\
+1622 <b>/proc/meminfo</b> Cached:         10996068 kB<br>\
+1623 <b>/proc/meminfo</b> SwapCached:        28408 kB<br>\
+1624 <b>/proc/meminfo</b> Active:         14412024 kB<br>\
+1625 <b>/proc/meminfo</b> Inactive:        4876328 kB<br>\
+1626 <b>/proc/meminfo</b> Active(anon):    6207576 kB<br>\
+1627 <b>/proc/meminfo</b> Inactive(anon):   833240 kB<br>\
+1628 <b>/proc/meminfo</b> Active(file):    8204448 kB<br>\
+1629 <b>/proc/meminfo</b> Inactive(file):  4043088 kB<br>\
+1630 <b>/proc/meminfo</b> Unevictable:          32 kB<br>\
+1631 <b>/proc/meminfo</b> Mlocked:              32 kB<br>\
+1632 <b>/proc/meminfo</b> SwapTotal:      33217532 kB<br>\
+1633 <b>/proc/meminfo</b> SwapFree:       32979708 kB<br>\
+1634 <b>/proc/meminfo</b> Dirty:               168 kB<br>\
+1635 <b>/proc/meminfo</b> Writeback:             0 kB<br>\
+1636 <b>/proc/meminfo</b> AnonPages:       6940420 kB<br>\
+1637 <b>/proc/meminfo</b> Mapped:           885960 kB<br>\
+1638 <b>/proc/meminfo</b> Shmem:            286612 kB<br>\
+1639 <b>/proc/meminfo</b> Slab:            1031200 kB<br>\
+1640 <b>/proc/meminfo</b> SReclaimable:     804604 kB<br>\
+1641 <b>/proc/meminfo</b> SUnreclaim:       226596 kB<br>\
+1642 <b>/proc/meminfo</b> KernelStack:       29472 kB<br>\
+1643 <b>/proc/meminfo</b> PageTables:       117344 kB<br>\
+1644 <b>/proc/meminfo</b> NFS_Unstable:          0 kB<br>\
+1645 <b>/proc/meminfo</b> Bounce:                0 kB<br>\
+1646 <b>/proc/meminfo</b> WritebackTmp:          0 kB<br>\
+1647 <b>/proc/meminfo</b> CommitLimit:    49522180 kB<br>\
+1648 <b>/proc/meminfo</b> Committed_AS:   22786804 kB<br>\
+1649 <b>/proc/meminfo</b> VmallocTotal:   34359738367 kB<br>\
+1650 <b>/proc/meminfo</b> VmallocUsed:           0 kB<br>\
+1651 <b>/proc/meminfo</b> VmallocChunk:          0 kB<br>\
+1652 <b>/proc/meminfo</b> HardwareCorrupted:     0 kB<br>\
+1653 <b>/proc/meminfo</b> AnonHugePages:         0 kB<br>\
+1654 <b>/proc/meminfo</b> ShmemHugePages:        0 kB<br>\
+1655 <b>/proc/meminfo</b> ShmemPmdMapped:        0 kB<br>\
+1656 <b>/proc/meminfo</b> CmaTotal:              0 kB<br>\
+1657 <b>/proc/meminfo</b> CmaFree:               0 kB<br>\
+1658 <b>/proc/meminfo</b> HugePages_Total:       0<br>\
+1659 <b>/proc/meminfo</b> HugePages_Free:        0<br>\
+1660 <b>/proc/meminfo</b> HugePages_Rsvd:        0<br>\
+1661 <b>/proc/meminfo</b> HugePages_Surp:        0<br>\
+1662 <b>/proc/meminfo</b> Hugepagesize:       2048 kB<br>\
+1663 <b>/proc/meminfo</b> DirectMap4k:     1408436 kB<br>\
+1664 <b>/proc/meminfo</b> DirectMap2M:    31811584 kB<br>\
+1665 <b>/proc/meminfo</b> DirectMap1G:           0 kB<br>\
+1666 <b>/proc/stat</b> <br>\
+1667 <b>/proc/stat</b> cpu  4284191 6492 3104975 309190951 25917 0 12038 0 0 0<br>\
+1668 <b>/proc/stat</b> cpu0 408000 740 64688 25918512 1639 0 6708 0 0 0<br>\
+1669 <b>/proc/stat</b> cpu1 389371 336 81921 25924871 574 0 2085 0 0 0<br>\
+1670 <b>/proc/stat</b> cpu2 404926 317 72426 25923269 398 0 512 0 0 0<br>\
+1671 <b>/proc/stat</b> cpu3 383692 472 61831 25952989 555 0 248 0 0 0<br>\
+1672 <b>/proc/stat</b> cpu4 164098 189 1473375 24604615 336 0 107 0 0 0<br>\
+1673 <b>/proc/stat</b> cpu5 373092 550 95066 25932819 336 0 35 0 0 0<br>\
+1674 <b>/proc/stat</b> cpu6 377450 564 63186 25958613 350 0 21 0 0 0<br>\
+1675 <b>/proc/stat</b> cpu7 379844 561 62501 25957487 246 0 21 0 0 0<br>\
+1676 <b>/proc/stat</b> cpu8 372829 499 62120 25963362 310 0 192 0 0 0<br>\
+1677 <b>/proc/stat</b> cpu9 201092 324 937226 25251041 298 0 15 0 0 0<br>\
+1678 <b>/proc/stat</b> cpu10 383488 377 56905 25949602 341 0 860 0 0 0<br>\
+1679 <b>/proc/stat</b> cpu11 446303 1559 73725 25853766 20527 0 1230 0 0 0<br>\
+1680 <b>/proc/stat</b> intr 114945113 8 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 543160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1666366 0 0 1960025 0 2 0 2 0 0 0 0 2 2 2 2 2 2 33 743 625 1257 4166846 24281384 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>\
+1681 <b>/proc/stat</b> ctxt 366707571<br>\
+1682 <b>/proc/stat</b> btime 1565007368<br>\
+1683 <b>/proc/stat</b> processes 131538<br>\
+1684 <b>/proc/stat</b> procs_running 2<br>\
+1685 <b>/proc/stat</b> procs_blocked 1<br>\
+1686 <b>/proc/stat</b> softirq 59859822 5 24096125 52321 2043194 1457876 0 580156 19746190 0 11883955<br>\
+1687 <b>/proc/version</b> <br>\
+1688 <b>/proc/version</b> Linux version 4.15.0-55-generic (buildd@lgw01-amd64-038) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10)) #60~16.04.2-Ubuntu SMP Thu Jul 4 09:03:09 UTC 2019<br>\
+1689 <b>/proc/net/dev</b> <br>\
+1690 <b>/proc/net/dev</b> Inter-|   Receive                                                |  Transmit<br>\
+1691 <b>/proc/net/dev</b>  face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed<br>\
+1692 <b>/proc/net/dev</b> enp0s31f6: 1206551819 2077446    0    0    0     0          0     77770 60686084  400239    0    0    0     0       0          0<br>\
+1693 <b>/proc/net/dev</b> veth5474953:  177968    2587    0    0    0     0          0         0 27570096    5777    0    0    0     0       0          0<br>\
+1694 <b>/proc/net/dev</b> veth52796bc:  372109    5475    0    0    0     0          0         0 57690091   18163    0    0    0     0       0          0<br>\
+1695 <b>/proc/net/dev</b>     lo: 6808412   52639    0    0    0     0          0         0  6808412   52639    0    0    0     0       0          0<br>\
+1696 <b>/proc/net/dev</b> docker0:  441494    8142    0    0    0     0          0         0 85545857   24469    0    0    0     0       0          0<br>\
+1697 <b>/proc/diskinfo</b> <br>\
+1698 <b>/proc/diskstats</b> <br>\
+1699 <b>/proc/diskstats</b>    7       0 loop0 5 0 16 0 0 0 0 0 0 0 0<br>\
+1700 <b>/proc/diskstats</b>    7       1 loop1 0 0 0 0 0 0 0 0 0 0 0<br>\
+1701 <b>/proc/diskstats</b>    7       2 loop2 0 0 0 0 0 0 0 0 0 0 0<br>\
+1702 <b>/proc/diskstats</b>    7       3 loop3 0 0 0 0 0 0 0 0 0 0 0<br>\
+1703 <b>/proc/diskstats</b>    7       4 loop4 0 0 0 0 0 0 0 0 0 0 0<br>\
+1704 <b>/proc/diskstats</b>    7       5 loop5 0 0 0 0 0 0 0 0 0 0 0<br>\
+1705 <b>/proc/diskstats</b>    7       6 loop6 0 0 0 0 0 0 0 0 0 0 0<br>\
+1706 <b>/proc/diskstats</b>    7       7 loop7 0 0 0 0 0 0 0 0 0 0 0<br>\
+1707 <b>/proc/diskstats</b>   11       0 sr0 0 0 0 0 0 0 0 0 0 0 0<br>\
+1708 <b>/proc/diskstats</b>    8       0 sda 795400 87370 23700790 515948 703461 712875 1298737496 7381904 0 295864 7899228<br>\
+1709 <b>/proc/diskstats</b>    8       1 sda1 740046 64989 23071170 438648 695971 364557 1295918592 6383448 0 284792 6823032<br>\
+1710 <b>/proc/diskstats</b>    8       2 sda2 2 0 4 4 0 0 0 0 0 4 4<br>\
+1711 <b>/proc/diskstats</b>    8       5 sda5 55281 22381 625352 77272 3828 348318 2818904 995396 0 19840 1073036<br>\
+1712 <b>/sbin/multipath</b> <br>\
+1713 <b>/dev/mapper</b> <br>\
+1714 <b>/dev/mapper</b> total 0<br>\
+1715 <b>/dev/mapper</b> crw------- 1 root root 10<br>\
+1716 <b>/dev/mpath</b> <br>\
+1717 <b>/dev/dm-*</b> <br>\
+1718 <b>/dev/md*</b> <br>\
+1719 <b>/dev/sd*</b> <br>\
+1720 <b>/dev/sd*</b> brw-rw---- 1 root disk 8<br>\
+1721 <b>/dev/sd*</b> brw-rw---- 1 root disk 8<br>\
+1722 <b>/dev/sd*</b> brw-rw---- 1 root disk 8<br>\
+1723 <b>/dev/sd*</b> brw-rw---- 1 root disk 8<br>\
+1724 <b>/proc/partitions</b> <br>\
+1725 <b>/proc/partitions</b> major minor  #blocks  name<br>\
+1726 <b>/proc/partitions</b> <br>\
+1727 <b>/proc/partitions</b>   11        0    1048575 sr0<br>\
+1728 <b>/proc/partitions</b>    8        0  976762584 sda<br>\
+1729 <b>/proc/partitions</b>    8        1  943542272 sda1<br>\
+1730 <b>/proc/partitions</b>    8        2          1 sda2<br>\
+1731 <b>/proc/partitions</b>    8        5   33217536 sda5<br>\
+1732 <b>/proc/1/stat</b> <br>\
+1733 <b>/proc/1/stat</b> 1 (systemd) S 0 1 1 0 -1 4194560 16730 2737908 373 1230 98 195 7823 2940 20 0 1 0 3 190222336 1100 18446744073709551615 1 1 0 0 0 0 671173123 4096 1260 0 0 0 17 5 0 0 54 0 0 0 0 0 0 0 0 0 0<br>\
+1734 <b>/proc/net/rpc/nfs</b> <br>\
+1735 <b>/proc/net/rpc/nfsd</b> <br>\
+1736 <b>/proc/modules</b> <br>\
+1737 <b>/proc/modules</b> binfmt_misc 20480 1 - Live 0x0000000000000000<br>\
+1738 <b>/proc/modules</b> veth 16384 0 - Live 0x0000000000000000<br>\
+1739 <b>/proc/modules</b> ipt_MASQUERADE 16384 1 - Live 0x0000000000000000<br>\
+1740 <b>/proc/modules</b> nf_nat_masquerade_ipv4 16384 1 ipt_MASQUERADE<br>\
+1741 <b>/proc/modules</b> nf_conntrack_netlink 40960 0 - Live 0x0000000000000000<br>\
+1742 <b>/proc/modules</b> nfnetlink 16384 2 nf_conntrack_netlink<br>\
+1743 <b>/proc/modules</b> xfrm_user 32768 1 - Live 0x0000000000000000<br>\
+1744 <b>/proc/modules</b> xfrm_algo 16384 1 xfrm_user<br>\
+1745 <b>/proc/modules</b> iptable_nat 16384 1 - Live 0x0000000000000000<br>\
+1746 <b>/proc/modules</b> nf_conntrack_ipv4 16384 3 - Live 0x0000000000000000<br>\
+1747 <b>/proc/modules</b> nf_defrag_ipv4 16384 1 nf_conntrack_ipv4<br>\
+1748 <b>/proc/modules</b> nf_nat_ipv4 16384 1 iptable_nat<br>\
+1749 <b>/proc/modules</b> xt_addrtype 16384 2 - Live 0x0000000000000000<br>\
+1750 <b>/proc/modules</b> iptable_filter 16384 1 - Live 0x0000000000000000<br>\
+1751 <b>/proc/modules</b> ip_tables 28672 2 iptable_nat<br>\
+1752 <b>/proc/modules</b> xt_conntrack 16384 1 - Live 0x0000000000000000<br>\
+1753 <b>/proc/modules</b> x_tables 40960 5 ipt_MASQUERADE<br>\
+1754 <b>/proc/modules</b> nf_nat 32768 2 nf_nat_masquerade_ipv4<br>\
+1755 <b>/proc/modules</b> nf_conntrack 131072 7 ipt_MASQUERADE<br>\
+1756 <b>/proc/modules</b> libcrc32c 16384 2 nf_nat<br>\
+1757 <b>/proc/modules</b> br_netfilter 24576 0 - Live 0x0000000000000000<br>\
+1758 <b>/proc/modules</b> bridge 151552 1 br_netfilter<br>\
+1759 <b>/proc/modules</b> stp 16384 1 bridge<br>\
+1760 <b>/proc/modules</b> llc 16384 2 bridge<br>\
+1761 <b>/proc/modules</b> aufs 237568 0 - Live 0x0000000000000000<br>\
+1762 <b>/proc/modules</b> overlay 77824 2 - Live 0x0000000000000000<br>\
+1763 <b>/proc/modules</b> snd_hda_codec_hdmi 49152 2 - Live 0x0000000000000000<br>\
+1764 <b>/proc/modules</b> eeepc_wmi 16384 0 - Live 0x0000000000000000<br>\
+1765 <b>/proc/modules</b> asus_wmi 28672 1 eeepc_wmi<br>\
+1766 <b>/proc/modules</b> sparse_keymap 16384 1 asus_wmi<br>\
+1767 <b>/proc/modules</b> video 45056 1 asus_wmi<br>\
+1768 <b>/proc/modules</b> mxm_wmi 16384 0 - Live 0x0000000000000000<br>\
+1769 <b>/proc/modules</b> wmi_bmof 16384 0 - Live 0x0000000000000000<br>\
+1770 <b>/proc/modules</b> intel_wmi_thunderbolt 16384 0 - Live 0x0000000000000000<br>\
+1771 <b>/proc/modules</b> intel_rapl 20480 0 - Live 0x0000000000000000<br>\
+1772 <b>/proc/modules</b> x86_pkg_temp_thermal 16384 0 - Live 0x0000000000000000<br>\
+1773 <b>/proc/modules</b> intel_powerclamp 16384 0 - Live 0x0000000000000000<br>\
+1774 <b>/proc/modules</b> coretemp 16384 0 - Live 0x0000000000000000<br>\
+1775 <b>/proc/modules</b> nvidia_uvm 798720 0 - Live 0x0000000000000000 (OE)<br>\
+1776 <b>/proc/modules</b> kvm_intel 217088 0 - Live 0x0000000000000000<br>\
+1777 <b>/proc/modules</b> snd_hda_codec_realtek 106496 1 - Live 0x0000000000000000<br>\
+1778 <b>/proc/modules</b> snd_hda_codec_generic 73728 1 snd_hda_codec_realtek<br>\
+1779 <b>/proc/modules</b> kvm 598016 1 kvm_intel<br>\
+1780 <b>/proc/modules</b> irqbypass 16384 1 kvm<br>\
+1781 <b>/proc/modules</b> crct10dif_pclmul 16384 0 - Live 0x0000000000000000<br>\
+1782 <b>/proc/modules</b> crc32_pclmul 16384 0 - Live 0x0000000000000000<br>\
+1783 <b>/proc/modules</b> ghash_clmulni_intel 16384 0 - Live 0x0000000000000000<br>\
+1784 <b>/proc/modules</b> pcbc 16384 0 - Live 0x0000000000000000<br>\
+1785 <b>/proc/modules</b> snd_seq_midi 16384 0 - Live 0x0000000000000000<br>\
+1786 <b>/proc/modules</b> snd_seq_midi_event 16384 1 snd_seq_midi<br>\
+1787 <b>/proc/modules</b> snd_hda_intel 45056 7 - Live 0x0000000000000000<br>\
+1788 <b>/proc/modules</b> snd_rawmidi 32768 1 snd_seq_midi<br>\
+1789 <b>/proc/modules</b> snd_hda_codec 126976 4 snd_hda_codec_hdmi<br>\
+1790 <b>/proc/modules</b> snd_hda_core 81920 5 snd_hda_codec_hdmi<br>\
+1791 <b>/proc/modules</b> snd_hwdep 20480 1 snd_hda_codec<br>\
+1792 <b>/proc/modules</b> snd_seq 65536 2 snd_seq_midi<br>\
+1793 <b>/proc/modules</b> snd_pcm 98304 4 snd_hda_codec_hdmi<br>\
+1794 <b>/proc/modules</b> snd_seq_device 16384 3 snd_seq_midi<br>\
+1795 <b>/proc/modules</b> mei_me 40960 0 - Live 0x0000000000000000<br>\
+1796 <b>/proc/modules</b> snd_timer 32768 2 snd_seq<br>\
+1797 <b>/proc/modules</b> aesni_intel 188416 0 - Live 0x0000000000000000<br>\
+1798 <b>/proc/modules</b> aes_x86_64 20480 1 aesni_intel<br>\
+1799 <b>/proc/modules</b> crypto_simd 16384 1 aesni_intel<br>\
+1800 <b>/proc/modules</b> snd 81920 25 snd_hda_codec_hdmi<br>\
+1801 <b>/proc/modules</b> glue_helper 16384 1 aesni_intel<br>\
+1802 <b>/proc/modules</b> cryptd 24576 3 ghash_clmulni_intel<br>\
+1803 <b>/proc/modules</b> intel_cstate 20480 0 - Live 0x0000000000000000<br>\
+1804 <b>/proc/modules</b> joydev 24576 0 - Live 0x0000000000000000<br>\
+1805 <b>/proc/modules</b> input_leds 16384 0 - Live 0x0000000000000000<br>\
+1806 <b>/proc/modules</b> intel_rapl_perf 16384 0 - Live 0x0000000000000000<br>\
+1807 <b>/proc/modules</b> shpchp 36864 0 - Live 0x0000000000000000<br>\
+1808 <b>/proc/modules</b> soundcore 16384 1 snd<br>\
+1809 <b>/proc/modules</b> mei 90112 1 mei_me<br>\
+1810 <b>/proc/modules</b> ioatdma 57344 0 - Live 0x0000000000000000<br>\
+1811 <b>/proc/modules</b> dca 16384 1 ioatdma<br>\
+1812 <b>/proc/modules</b> mac_hid 16384 0 - Live 0x0000000000000000<br>\
+1813 <b>/proc/modules</b> wmi 24576 4 asus_wmi<br>\
+1814 <b>/proc/modules</b> parport_pc 36864 0 - Live 0x0000000000000000<br>\
+1815 <b>/proc/modules</b> ppdev 20480 0 - Live 0x0000000000000000<br>\
+1816 <b>/proc/modules</b> lp 20480 0 - Live 0x0000000000000000<br>\
+1817 <b>/proc/modules</b> parport 49152 3 parport_pc<br>\
+1818 <b>/proc/modules</b> autofs4 40960 2 - Live 0x0000000000000000<br>\
+1819 <b>/proc/modules</b> hid_microsoft 16384 0 - Live 0x0000000000000000<br>\
+1820 <b>/proc/modules</b> hid_generic 16384 0 - Live 0x0000000000000000<br>\
+1821 <b>/proc/modules</b> usbhid 49152 0 - Live 0x0000000000000000<br>\
+1822 <b>/proc/modules</b> hid 118784 3 hid_microsoft<br>\
+1823 <b>/proc/modules</b> nvidia_drm 45056 6 - Live 0x0000000000000000 (POE)<br>\
+1824 <b>/proc/modules</b> nvidia_modeset 1093632 11 nvidia_drm<br>\
+1825 <b>/proc/modules</b> nvidia 17895424 586 nvidia_uvm<br>\
+1826 <b>/proc/modules</b> drm_kms_helper 172032 1 nvidia_drm<br>\
+1827 <b>/proc/modules</b> syscopyarea 16384 1 drm_kms_helper<br>\
+1828 <b>/proc/modules</b> sysfillrect 16384 1 drm_kms_helper<br>\
+1829 <b>/proc/modules</b> sysimgblt 16384 1 drm_kms_helper<br>\
+1830 <b>/proc/modules</b> fb_sys_fops 16384 1 drm_kms_helper<br>\
+1831 <b>/proc/modules</b> drm 401408 9 nvidia_drm<br>\
+1832 <b>/proc/modules</b> e1000e 249856 0 - Live 0x0000000000000000<br>\
+1833 <b>/proc/modules</b> ahci 40960 2 - Live 0x0000000000000000<br>\
+1834 <b>/proc/modules</b> ipmi_devintf 20480 0 - Live 0x0000000000000000<br>\
+1835 <b>/proc/modules</b> ptp 20480 1 e1000e<br>\
+1836 <b>/proc/modules</b> ipmi_msghandler 53248 2 nvidia<br>\
+1837 <b>/proc/modules</b> pps_core 20480 1 ptp<br>\
+1838 <b>/proc/modules</b> libahci 32768 1 ahci<br>\
+1839 <b>ifconfig</b> <br>\
+1840 <b>ifconfig</b> docker0   Link encap:Ethernet  HWaddr 02:42:c9:a4:14:e8  <br>\
+1841 <b>ifconfig</b>           inet addr:172.17.0.1  Bcast:172.17.255.255  Mask:255.255.0.0<br>\
+1842 <b>ifconfig</b>           inet6 addr: fe80::42:c9ff:fea4:14e8/64 Scope:Link<br>\
+1843 <b>ifconfig</b>           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1<br>\
+1844 <b>ifconfig</b>           RX packets:8142 errors:0 dropped:0 overruns:0 frame:0<br>\
+1845 <b>ifconfig</b>           TX packets:24469 errors:0 dropped:0 overruns:0 carrier:0<br>\
+1846 <b>ifconfig</b>           collisions:0 txqueuelen:0 <br>\
+1847 <b>ifconfig</b>           RX bytes:441494 (441.4 KB)  TX bytes:85545857 (85.5 MB)<br>\
+1848 <b>ifconfig</b> <br>\
+1849 <b>ifconfig</b> enp0s31f6 Link encap:Ethernet  HWaddr 10:7b:44:4f:13:a2  <br>\
+1850 <b>ifconfig</b>           inet addr:10.28.100.248  Bcast:10.28.101.255  Mask:255.255.254.0<br>\
+1851 <b>ifconfig</b>           inet6 addr: fe80::df46:d917:f8d4:68ae/64 Scope:Link<br>\
+1852 <b>ifconfig</b>           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1<br>\
+1853 <b>ifconfig</b>           RX packets:2077446 errors:0 dropped:0 overruns:0 frame:0<br>\
+1854 <b>ifconfig</b>           TX packets:400239 errors:0 dropped:0 overruns:0 carrier:0<br>\
+1855 <b>ifconfig</b>           collisions:0 txqueuelen:1000 <br>\
+1856 <b>ifconfig</b>           RX bytes:1206551819 (1.2 GB)  TX bytes:60686084 (60.6 MB)<br>\
+1857 <b>ifconfig</b>           Interrupt:20 Memory:92f00000-92f20000 <br>\
+1858 <b>ifconfig</b> <br>\
+1859 <b>ifconfig</b> lo        Link encap:Local Loopback  <br>\
+1860 <b>ifconfig</b>           inet addr:127.0.0.1  Mask:255.0.0.0<br>\
+1861 <b>ifconfig</b>           inet6 addr: ::1/128 Scope:Host<br>\
+1862 <b>ifconfig</b>           UP LOOPBACK RUNNING  MTU:65536  Metric:1<br>\
+1863 <b>ifconfig</b>           RX packets:52639 errors:0 dropped:0 overruns:0 frame:0<br>\
+1864 <b>ifconfig</b>           TX packets:52639 errors:0 dropped:0 overruns:0 carrier:0<br>\
+1865 <b>ifconfig</b>           collisions:0 txqueuelen:1000 <br>\
+1866 <b>ifconfig</b>           RX bytes:6808412 (6.8 MB)  TX bytes:6808412 (6.8 MB)<br>\
+1867 <b>ifconfig</b> <br>\
+1868 <b>ifconfig</b> veth5474953 Link encap:Ethernet  HWaddr ae:de:1d:03:b6:55  <br>\
+1869 <b>ifconfig</b>           inet6 addr: fe80::acde:1dff:fe03:b655/64 Scope:Link<br>\
+1870 <b>ifconfig</b>           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1<br>\
+1871 <b>ifconfig</b>           RX packets:2587 errors:0 dropped:0 overruns:0 frame:0<br>\
+1872 <b>ifconfig</b>           TX packets:5777 errors:0 dropped:0 overruns:0 carrier:0<br>\
+1873 <b>ifconfig</b>           collisions:0 txqueuelen:0 <br>\
+1874 <b>ifconfig</b>           RX bytes:177968 (177.9 KB)  TX bytes:27570096 (27.5 MB)<br>\
+1875 <b>ifconfig</b> <br>\
+1876 <b>ifconfig</b> veth52796bc Link encap:Ethernet  HWaddr f2:c3:79:31:7e:e8  <br>\
+1877 <b>ifconfig</b>           inet6 addr: fe80::f0c3:79ff:fe31:7ee8/64 Scope:Link<br>\
+1878 <b>ifconfig</b>           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1<br>\
+1879 <b>ifconfig</b>           RX packets:5475 errors:0 dropped:0 overruns:0 frame:0<br>\
+1880 <b>ifconfig</b>           TX packets:18163 errors:0 dropped:0 overruns:0 carrier:0<br>\
+1881 <b>ifconfig</b>           collisions:0 txqueuelen:0 <br>\
+1882 <b>ifconfig</b>           RX bytes:372109 (372.1 KB)  TX bytes:57690091 (57.6 MB)<br>\
+1883 <b>ifconfig</b> <br>\
+1884 <b>/bin/df-m</b> <br>\
+1885 <b>/bin/df-m</b> Filesystem     1M-blocks   Used Available Use% Mounted on<br>\
+1886 <b>/bin/df-m</b> udev               15888      0     15888   0% /dev<br>\
+1887 <b>/bin/df-m</b> tmpfs               3185     10      3175   1% /run<br>\
+1888 <b>/bin/df-m</b> ddev/sda1         906842 322943    537812  38% /<br>\
+1889 <b>/bin/df-m</b> tmpfs              15923    248     15675   2% /dev/shm<br>\
+1890 <b>/bin/df-m</b> tmpfs                  5      1         5   1% /run/lock<br>\
+1891 <b>/bin/df-m</b> tmpfs              15923      0     15923   0% /sys/fs/cgroup<br>\
+1892 <b>/bin/df-m</b> tmpfs               3185      1      3185   1% /run/user/1000<br>\
+1893 <b>/bin/mount</b> <br>\
+1894 <b>/bin/mount</b> sysfs on /sys type sysfs (rw<br>\
+1895 <b>/bin/mount</b> proc on /proc type proc (rw<br>\
+1896 <b>/bin/mount</b> udev on /dev type devtmpfs (rw<br>\
+1897 <b>/bin/mount</b> devpts on /dev/pts type devpts (rw<br>\
+1898 <b>/bin/mount</b> tmpfs on /run type tmpfs (rw<br>\
+1899 <b>/bin/mount</b> ddev/sda1 on / type ext4 (rw<br>\
+1900 <b>/bin/mount</b> securityfs on /sys/kernel/security type securityfs (rw<br>\
+1901 <b>/bin/mount</b> tmpfs on /dev/shm type tmpfs (rw<br>\
+1902 <b>/bin/mount</b> tmpfs on /run/lock type tmpfs (rw<br>\
+1903 <b>/bin/mount</b> tmpfs on /sys/fs/cgroup type tmpfs (ro<br>\
+1904 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/systemd type cgroup (rw<br>\
+1905 <b>/bin/mount</b> pstore on /sys/fs/pstore type pstore (rw<br>\
+1906 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/cpuset type cgroup (rw<br>\
+1907 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/net_cls<br>\
+1908 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw<br>\
+1909 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/memory type cgroup (rw<br>\
+1910 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/blkio type cgroup (rw<br>\
+1911 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/rdma type cgroup (rw<br>\
+1912 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/freezer type cgroup (rw<br>\
+1913 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/cpu<br>\
+1914 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/pids type cgroup (rw<br>\
+1915 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/devices type cgroup (rw<br>\
+1916 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/perf_event type cgroup (rw<br>\
+1917 <b>/bin/mount</b> systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw<br>\
+1918 <b>/bin/mount</b> mqueue on /dev/mqueue type mqueue (rw<br>\
+1919 <b>/bin/mount</b> debugfs on /sys/kernel/debug type debugfs (rw<br>\
+1920 <b>/bin/mount</b> hugetlbfs on /dev/hugepages type hugetlbfs (rw<br>\
+1921 <b>/bin/mount</b> configfs on /sys/kernel/config type configfs (rw<br>\
+1922 <b>/bin/mount</b> fusectl on /sys/fs/fuse/connections type fusectl (rw<br>\
+1923 <b>/bin/mount</b> tmpfs on /run/user/1000 type tmpfs (rw<br>\
+1924 <b>/bin/mount</b> gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw<br>\
+1925 <b>/bin/mount</b> overlay on /var/lib/docker/overlay2/04fd9ade1df58e3813637d7551448b33241caf2ad01065dc0895bb73d14c67d3/merged type overlay (rw<br>\
+1926 <b>/bin/mount</b> nsfs on /run/docker/netns/7b4b23e20ac6 type nsfs (rw)<br>\
+1927 <b>/bin/mount</b> overlay on /var/lib/docker/overlay2/a0efdd0218dbf279cada5b3d28c6ebd40704716be284034f72b3ca76e5fb0396/merged type overlay (rw<br>\
+1928 <b>/bin/mount</b> nsfs on /run/docker/netns/d43f6d9ea165 type nsfs (rw)<br>\
+1929 <b>/bin/mount</b> binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw<br>\
+1930 <b>/etc/fstab</b> <br>\
+1931 <b>/etc/fstab</b> # /etc/fstab: static file system information.<br>\
+1932 <b>/etc/fstab</b> #<br>\
+1933 <b>/etc/fstab</b> # Use 'blkid' to print the universally unique identifier for a<br>\
+1934 <b>/etc/fstab</b> # device; this may be used with UUID= as a more robust way to name devices<br>\
+1935 <b>/etc/fstab</b> # that works even if disks are added and removed. See fstab(5).<br>\
+1936 <b>/etc/fstab</b> #<br>\
+1937 <b>/etc/fstab</b> # <file system> <mount point>   <type>  <options>       <dump>  <pass><br>\
+1938 <b>/etc/fstab</b> # / was on /dev/sda1 during installation<br>\
+1939 <b>/etc/fstab</b> UUID=268e6d85-1f17-492b-bdb1-09996a527d80 /               ext4    errors=remount-ro 0       1<br>\
+1940 <b>/etc/fstab</b> # swap was on /dev/sda5 during installation<br>\
+1941 <b>/etc/fstab</b> UUID=f3b032e9-6f34-4204-a467-3763b82b5f16 none            swap    sw              0       0<br>\
+1942 <b>netstat -r</b> <br>\
+1943 <b>netstat -r</b> Kernel IP routing table<br>\
+1944 <b>netstat -r</b> Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface<br>\
+1945 <b>netstat -r</b> default         gw-v50.dur2-nc. 0.0.0.0         UG        0 0          0 enp0s31f6<br>\
+1946 <b>netstat -r</b> 10.28.100.0     *               255.255.254.0   U         0 0          0 enp0s31f6<br>\
+1947 <b>netstat -r</b> link-local      *               255.255.0.0     U         0 0          0 enp0s31f6<br>\
+1948 <b>netstat -r</b> 172.17.0.0      *               255.255.0.0     U         0 0          0 docker0<br>\
+1949 <b>uptime</b> <br>\
+1950 <b>uptime</b>  09:39:40 up 3 days<br>\
+1951 <b>getconf PAGESIZE</b> <br>\
+1952 <b>getconf PAGESIZE</b> 4096<br>\
+");
+}
+</script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+		google.load("visualization", "1.1", {packages:["corechart"]});
+
+		google.setOnLoadCallback(setupCharts);
+		
+		function setupCharts() {
+		
+		var chart = null;
+
+			var data_CPU_UTIL = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'User%','Sys%','Wait%','Idle%']
+,['Date(2019,  7, 08, 09, 39, 41)',2.2,4.1,2.5,91.1]
+,['Date(2019,  7, 08, 09, 39, 42)',6.4,4.1,0.0,89.5]
+,['Date(2019,  7, 08, 09, 39, 43)',6.5,3.6,0.0,89.9]
+,['Date(2019,  7, 08, 09, 39, 44)',1.6,1.9,0.1,96.4]
+,['Date(2019,  7, 08, 09, 39, 45)',5.1,5.4,0.0,89.5]
+,['Date(2019,  7, 08, 09, 39, 46)',0.7,1.0,0.0,98.3]
+,['Date(2019,  7, 08, 09, 39, 47)',3.2,3.0,0.0,93.8]
+,['Date(2019,  7, 08, 09, 39, 48)',6.2,4.6,0.0,89.2]
+,['Date(2019,  7, 08, 09, 39, 49)',5.8,4.2,0.0,90.0]
+,['Date(2019,  7, 08, 09, 39, 50)',6.1,4.5,0.0,89.4]
+,['Date(2019,  7, 08, 09, 39, 51)',5.6,4.4,0.0,90.0]
+,['Date(2019,  7, 08, 09, 39, 52)',7.6,5.4,0.0,87.1]
+,['Date(2019,  7, 08, 09, 39, 53)',9.2,7.0,0.0,83.8]
+,['Date(2019,  7, 08, 09, 39, 54)',4.7,5.6,0.0,89.7]
+,['Date(2019,  7, 08, 09, 39, 55)',5.1,5.1,0.0,89.8]
+,['Date(2019,  7, 08, 09, 39, 56)',5.3,5.4,0.0,89.4]
+,['Date(2019,  7, 08, 09, 39, 57)',5.4,5.6,0.0,89.0]
+,['Date(2019,  7, 08, 09, 39, 59)',4.9,5.7,0.1,89.3]
+,['Date(2019,  7, 08, 09, 40, 00)',5.9,5.8,0.0,88.4]
+,['Date(2019,  7, 08, 09, 40, 01)',5.3,5.2,0.0,89.5]
+,['Date(2019,  7, 08, 09, 40, 02)',4.9,5.0,0.0,90.1]
+,['Date(2019,  7, 08, 09, 40, 03)',4.9,5.1,0.0,90.0]
+,['Date(2019,  7, 08, 09, 40, 04)',5.0,5.3,0.0,89.7]
+,['Date(2019,  7, 08, 09, 40, 05)',5.0,4.8,0.0,90.2]
+,['Date(2019,  7, 08, 09, 40, 06)',5.2,5.2,0.0,89.6]
+,['Date(2019,  7, 08, 09, 40, 07)',5.3,4.4,0.0,90.2]
+,['Date(2019,  7, 08, 09, 40, 08)',5.0,5.1,0.0,89.9]
+,['Date(2019,  7, 08, 09, 40, 09)',5.5,4.4,0.0,90.1]
+,['Date(2019,  7, 08, 09, 40, 10)',2.1,2.8,0.1,95.0]
+,['Date(2019,  7, 08, 09, 40, 11)',0.2,0.7,0.0,99.2]
+		]);
+
+		var options_CPU_UTIL = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "CPU Utilisation Percentages",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_CPU_UTIL").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_CPU_UTIL, options_CPU_UTIL);
+		});
+
+			var data_GPU_UTIL = google.visualization.arrayToDataTable([
+,['Date(2019,  7, 08, 09, 39, 41)',0,0,0,0]
+,['Date(2019,  7, 08, 09, 39, 42)',0,1,0,0]
+,['Date(2019,  7, 08, 09, 39, 43)',100,0,0,0]
+,['Date(2019,  7, 08, 09, 39, 44)',0,0,0,0]
+,['Date(2019,  7, 08, 09, 39, 45)',31,0,0,0]
+,['Date(2019,  7, 08, 09, 39, 46)',0,0,0,0]
+,['Date(2019,  7, 08, 09, 39, 47)',100,0,0,0]
+,['Date(2019,  7, 08, 09, 39, 48)',100,6,0,0]
+,['Date(2019,  7, 08, 09, 39, 49)',100,1,0,0]
+,['Date(2019,  7, 08, 09, 39, 50)',99,0,0,0]
+,['Date(2019,  7, 08, 09, 39, 51)',99,0,0,0]
+,['Date(2019,  7, 08, 09, 39, 52)',99,35,0,0]
+,['Date(2019,  7, 08, 09, 39, 53)',98,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 54)',99,0,0,0]
+,['Date(2019,  7, 08, 09, 39, 55)',95,2,0,0]
+,['Date(2019,  7, 08, 09, 39, 56)',99,9,0,0]
+,['Date(2019,  7, 08, 09, 39, 57)',75,13,0,0]
+,['Date(2019,  7, 08, 09, 39, 59)',99,0,0,0]
+,['Date(2019,  7, 08, 09, 40, 00)',98,9,0,0]
+,['Date(2019,  7, 08, 09, 40, 01)',97,0,0,0]
+,['Date(2019,  7, 08, 09, 40, 02)',96,3,0,0]
+,['Date(2019,  7, 08, 09, 40, 03)',99,0,0,0]
+,['Date(2019,  7, 08, 09, 40, 04)',99,2,0,0]
+,['Date(2019,  7, 08, 09, 40, 05)',97,0,0,0]
+,['Date(2019,  7, 08, 09, 40, 06)',89,2,0,0]
+,['Date(2019,  7, 08, 09, 40, 07)',97,0,0,0]
+,['Date(2019,  7, 08, 09, 40, 08)',97,0,0,0]
+,['Date(2019,  7, 08, 09, 40, 09)',98,0,0,0]
+,['Date(2019,  7, 08, 09, 40, 10)',0,1,0,0]
+,['Date(2019,  7, 08, 09, 40, 11)',0,0,0,0]
+		]);
+
+		var options_GPU_UTIL = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "NVidia GPU Utilisation Percent",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_GPU_UTIL").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_GPU_UTIL, options_GPU_UTIL);
+		});
+
+			var data_GPU_MEM = google.visualization.arrayToDataTable([
+,['Date(2019,  7, 08, 09, 39, 41)',0,1234,0,0]
+,['Date(2019,  7, 08, 09, 39, 42)',0,1234,0,0]
+,['Date(2019,  7, 08, 09, 39, 43)',2506,1245,0,0]
+,['Date(2019,  7, 08, 09, 39, 44)',3390,1245,0,0]
+,['Date(2019,  7, 08, 09, 39, 45)',6416,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 46)',1378,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 47)',4960,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 48)',2500,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 49)',2798,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 50)',2798,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 51)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 52)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 53)',2498,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 54)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 55)',2498,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 56)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 57)',2498,1235,0,0]
+,['Date(2019,  7, 08, 09, 39, 59)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 00)',2498,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 01)',2498,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 02)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 03)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 04)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 05)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 06)',2498,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 07)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 08)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 09)',2800,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 10)',1378,1235,0,0]
+,['Date(2019,  7, 08, 09, 40, 11)',1378,1235,0,0]
+		]);
+
+		var options_GPU_MEM = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "NVidia Memory Utilisation Percent",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_GPU_MEM").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_GPU_MEM, options_GPU_MEM);
+		});
+
+			var data_GPU_TEMP = google.visualization.arrayToDataTable([
+,['Date(2019,  7, 08, 09, 39, 41)',39,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 42)',39,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 43)',40,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 44)',40,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 45)',40,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 46)',40,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 47)',43,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 48)',43,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 49)',43,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 50)',44,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 51)',44,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 52)',44,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 53)',44,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 54)',45,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 55)',45,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 56)',45,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 57)',45,41,0,0]
+,['Date(2019,  7, 08, 09, 39, 59)',46,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 00)',46,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 01)',46,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 02)',46,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 03)',47,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 04)',47,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 05)',47,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 06)',47,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 07)',48,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 08)',48,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 09)',48,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 10)',47,41,0,0]
+,['Date(2019,  7, 08, 09, 40, 11)',47,41,0,0]
+		]);
+
+		var options_GPU_TEMP = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "NVidia Temperature C",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_GPU_TEMP").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_GPU_TEMP, options_GPU_TEMP);
+		});
+
+			var data_GPU_WATTS = google.visualization.arrayToDataTable([
+,['Date(2019,  7, 08, 09, 39, 41)',24,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 42)',24,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 43)',92,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 44)',86,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 45)',41,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 46)',41,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 47)',129,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 48)',125,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 49)',112,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 50)',115,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 51)',85,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 52)',102,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 53)',66,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 54)',102,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 55)',82,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 56)',78,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 57)',83,25,0,0]
+,['Date(2019,  7, 08, 09, 39, 59)',103,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 00)',80,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 01)',106,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 02)',104,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 03)',98,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 04)',104,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 05)',104,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 06)',108,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 07)',106,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 08)',100,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 09)',105,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 10)',43,25,0,0]
+,['Date(2019,  7, 08, 09, 40, 11)',43,25,0,0]
+		]);
+
+		var options_GPU_WATTS = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "NVidia Power Draw Watts",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_GPU_WATTS").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_GPU_WATTS, options_GPU_WATTS);
+		});
+
+			var data_GPU_MHZ = google.visualization.arrayToDataTable([
+		]);
+
+		var options_GPU_MHZ = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "NVidia GPU MHz",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_GPU_MHZ").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_GPU_MHZ, options_GPU_MHZ);
+		});
+
+			var data_MEM_LINUX = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'memtotal','memfree','cached','active','buffers','inactive']
+,['Date(2019,  7, 08, 09, 39, 41)',31845.0,10329.0,10738.4,15308.2,1306.8,4762.1]
+,['Date(2019,  7, 08, 09, 39, 42)',31845.0,9738.3,10738.4,15897.8,1306.8,4762.1]
+,['Date(2019,  7, 08, 09, 39, 43)',31845.0,11198.4,10746.4,14320.2,1306.8,4770.1]
+,['Date(2019,  7, 08, 09, 39, 44)',31845.0,11345.9,10746.4,14173.0,1306.8,4770.1]
+,['Date(2019,  7, 08, 09, 39, 45)',31845.0,11343.8,10746.4,14173.7,1306.8,4770.1]
+,['Date(2019,  7, 08, 09, 39, 46)',31845.0,11346.3,10746.4,14172.2,1306.8,4770.1]
+,['Date(2019,  7, 08, 09, 39, 47)',31845.0,11346.2,10746.4,14172.3,1306.8,4770.1]
+,['Date(2019,  7, 08, 09, 39, 48)',31845.0,11343.4,10746.4,14175.6,1306.8,4770.1]
+,['Date(2019,  7, 08, 09, 39, 49)',31845.0,11343.4,10746.4,14175.6,1306.8,4770.1]
+,['Date(2019,  7, 08, 09, 39, 50)',31845.0,11343.4,10746.4,14175.6,1306.8,4770.1]
+,['Date(2019,  7, 08, 09, 39, 51)',31845.0,11343.4,10746.4,14175.6,1306.8,4770.1]
+,['Date(2019,  7, 08, 09, 39, 52)',31845.0,11339.1,10749.3,14178.8,1306.8,4773.0]
+,['Date(2019,  7, 08, 09, 39, 53)',31845.0,11337.4,10749.8,14179.1,1306.8,4773.5]
+,['Date(2019,  7, 08, 09, 39, 54)',31845.0,11340.1,10747.1,14178.9,1306.8,4770.8]
+,['Date(2019,  7, 08, 09, 39, 55)',31845.0,11340.9,10746.5,14179.0,1306.8,4770.2]
+,['Date(2019,  7, 08, 09, 39, 56)',31845.0,11340.3,10747.1,14179.0,1306.8,4770.8]
+,['Date(2019,  7, 08, 09, 39, 57)',31845.0,11339.9,10747.0,14179.0,1306.8,4770.8]
+,['Date(2019,  7, 08, 09, 39, 59)',31845.0,11339.8,10747.1,14179.1,1306.8,4770.8]
+,['Date(2019,  7, 08, 09, 40, 00)',31845.0,11341.0,10747.8,14178.3,1306.8,4771.4]
+,['Date(2019,  7, 08, 09, 40, 01)',31845.0,11341.2,10747.1,14177.7,1306.8,4770.8]
+,['Date(2019,  7, 08, 09, 40, 02)',31845.0,11341.2,10747.1,14177.7,1306.8,4770.8]
+,['Date(2019,  7, 08, 09, 40, 03)',31845.0,11341.8,10746.5,14177.7,1306.8,4770.2]
+,['Date(2019,  7, 08, 09, 40, 04)',31845.0,11341.8,10746.5,14177.7,1306.8,4770.2]
+,['Date(2019,  7, 08, 09, 40, 05)',31845.0,11343.3,10746.4,14176.4,1306.8,4770.2]
+,['Date(2019,  7, 08, 09, 40, 06)',31845.0,11343.3,10746.4,14176.4,1306.8,4770.2]
+,['Date(2019,  7, 08, 09, 40, 07)',31845.0,11343.3,10746.4,14176.4,1306.8,4770.2]
+,['Date(2019,  7, 08, 09, 40, 08)',31845.0,11343.3,10746.4,14176.4,1306.8,4770.2]
+,['Date(2019,  7, 08, 09, 40, 09)',31845.0,11343.3,10746.4,14176.4,1306.8,4770.2]
+,['Date(2019,  7, 08, 09, 40, 10)',31845.0,11343.2,10746.4,14176.8,1306.8,4770.2]
+,['Date(2019,  7, 08, 09, 40, 11)',31845.0,11343.2,10746.4,14176.9,1306.8,4770.2]
+		]);
+
+		var options_MEM_LINUX = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Real Memory - RAM in MB",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_MEM_LINUX").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_MEM_LINUX, options_MEM_LINUX);
+		});
+
+			var data_SWAP_LINUX = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'swaptotal','swapfree']
+,['Date(2019,  7, 08, 09, 39, 41)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 42)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 43)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 44)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 45)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 46)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 47)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 48)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 49)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 50)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 51)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 52)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 53)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 54)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 55)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 56)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 57)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 39, 59)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 00)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 01)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 02)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 03)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 04)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 05)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 06)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 07)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 08)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 09)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 10)',32439.0,32206.7]
+,['Date(2019,  7, 08, 09, 40, 11)',32439.0,32206.7]
+		]);
+
+		var options_SWAP_LINUX = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Virtual Memory - Paging Space in MB",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_SWAP_LINUX").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_SWAP_LINUX, options_SWAP_LINUX);
+		});
+
+			var data_RUNQBLOCK = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'Runnable','Blocked']
+,['Date(2019,  7, 08, 09, 39, 41)',3,0]
+,['Date(2019,  7, 08, 09, 39, 42)',3,0]
+,['Date(2019,  7, 08, 09, 39, 43)',2,0]
+,['Date(2019,  7, 08, 09, 39, 44)',3,0]
+,['Date(2019,  7, 08, 09, 39, 45)',2,0]
+,['Date(2019,  7, 08, 09, 39, 46)',1,0]
+,['Date(2019,  7, 08, 09, 39, 47)',4,0]
+,['Date(2019,  7, 08, 09, 39, 48)',2,0]
+,['Date(2019,  7, 08, 09, 39, 49)',2,0]
+,['Date(2019,  7, 08, 09, 39, 50)',2,0]
+,['Date(2019,  7, 08, 09, 39, 51)',2,0]
+,['Date(2019,  7, 08, 09, 39, 52)',3,0]
+,['Date(2019,  7, 08, 09, 39, 53)',3,0]
+,['Date(2019,  7, 08, 09, 39, 54)',2,0]
+,['Date(2019,  7, 08, 09, 39, 55)',2,0]
+,['Date(2019,  7, 08, 09, 39, 56)',2,0]
+,['Date(2019,  7, 08, 09, 39, 57)',2,0]
+,['Date(2019,  7, 08, 09, 39, 59)',2,0]
+,['Date(2019,  7, 08, 09, 40, 00)',3,0]
+,['Date(2019,  7, 08, 09, 40, 01)',2,0]
+,['Date(2019,  7, 08, 09, 40, 02)',3,0]
+,['Date(2019,  7, 08, 09, 40, 03)',2,0]
+,['Date(2019,  7, 08, 09, 40, 04)',2,0]
+,['Date(2019,  7, 08, 09, 40, 05)',2,0]
+,['Date(2019,  7, 08, 09, 40, 06)',2,0]
+,['Date(2019,  7, 08, 09, 40, 07)',2,0]
+,['Date(2019,  7, 08, 09, 40, 08)',2,0]
+,['Date(2019,  7, 08, 09, 40, 09)',2,0]
+,['Date(2019,  7, 08, 09, 40, 10)',2,0]
+,['Date(2019,  7, 08, 09, 40, 11)',1,0]
+		]);
+
+		var options_RUNQBLOCK = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Run Queue - processes that running or ready to run or Blocked",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_RUNQBLOCK").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_RUNQBLOCK, options_RUNQBLOCK);
+		});
+
+			var data_PSWITCH = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'pswitch']
+,['Date(2019,  7, 08, 09, 39, 41)',0.0]
+,['Date(2019,  7, 08, 09, 39, 42)',1510.3]
+,['Date(2019,  7, 08, 09, 39, 43)',1769.6]
+,['Date(2019,  7, 08, 09, 39, 44)',1770.3]
+,['Date(2019,  7, 08, 09, 39, 45)',1868.8]
+,['Date(2019,  7, 08, 09, 39, 46)',1508.6]
+,['Date(2019,  7, 08, 09, 39, 47)',1623.8]
+,['Date(2019,  7, 08, 09, 39, 48)',1731.2]
+,['Date(2019,  7, 08, 09, 39, 49)',1493.9]
+,['Date(2019,  7, 08, 09, 39, 50)',1588.4]
+,['Date(2019,  7, 08, 09, 39, 51)',1618.8]
+,['Date(2019,  7, 08, 09, 39, 52)',5637.4]
+,['Date(2019,  7, 08, 09, 39, 53)',10097.5]
+,['Date(2019,  7, 08, 09, 39, 54)',2030.6]
+,['Date(2019,  7, 08, 09, 39, 55)',1670.3]
+,['Date(2019,  7, 08, 09, 39, 56)',3331.5]
+,['Date(2019,  7, 08, 09, 39, 57)',2865.9]
+,['Date(2019,  7, 08, 09, 39, 59)',1885.5]
+,['Date(2019,  7, 08, 09, 40, 00)',4201.9]
+,['Date(2019,  7, 08, 09, 40, 01)',2073.1]
+,['Date(2019,  7, 08, 09, 40, 02)',1539.5]
+,['Date(2019,  7, 08, 09, 40, 03)',1547.4]
+,['Date(2019,  7, 08, 09, 40, 04)',1587.7]
+,['Date(2019,  7, 08, 09, 40, 05)',1628.6]
+,['Date(2019,  7, 08, 09, 40, 06)',1709.9]
+,['Date(2019,  7, 08, 09, 40, 07)',1482.7]
+,['Date(2019,  7, 08, 09, 40, 08)',1521.0]
+,['Date(2019,  7, 08, 09, 40, 09)',1535.3]
+,['Date(2019,  7, 08, 09, 40, 10)',1640.5]
+,['Date(2019,  7, 08, 09, 40, 11)',1409.4]
+		]);
+
+		var options_PSWITCH = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Process Switches per second - between processes",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_PSWITCH").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_PSWITCH, options_PSWITCH);
+		});
+
+			var data_FORKEXEC = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'fork','exec']
+,['Date(2019,  7, 08, 09, 39, 41)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 42)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 43)',6.9,0.0]
+,['Date(2019,  7, 08, 09, 39, 44)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 45)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 46)',1.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 47)',1.9,0.0]
+,['Date(2019,  7, 08, 09, 39, 48)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 49)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 50)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 51)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 52)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 53)',1.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 54)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 55)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 56)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 57)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 59)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 00)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 01)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 02)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 03)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 04)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 05)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 06)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 07)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 08)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 09)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 10)',0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 11)',0.0,0.0]
+		]);
+
+		var options_FORKEXEC = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Fork() and Exec() System Calls per second - creating processes",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_FORKEXEC").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_FORKEXEC, options_FORKEXEC);
+		});
+
+			var data_CPU_USE = google.visualization.arrayToDataTable([
+['CPU','User%','System%']
+,['CPU001',0.5,0.6]
+,['CPU002',0.7,0.2]
+,['CPU003',1.0,0.7]
+,['CPU004',1.1,0.7]
+,['CPU005',0.4,5.2]
+,['CPU006',20.7,10.6]
+,['CPU007',2.4,1.8]
+,['CPU008',7.6,4.6]
+,['CPU009',8.5,5.2]
+,['CPU010',0.4,14.6]
+,['CPU011',14.6,9.0]
+,['CPU012',0.3,0.7]
+		]);
+
+		var options_CPU_USE = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Use of Logical CPU Core Threads - POWER=SMT or x86=Hyperthreads",
+			focusTarget: "category",
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_CPU_USE").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.ColumnChart(document.getElementById("chart_master"));
+		chart.draw( data_CPU_USE, options_CPU_USE);
+		});
+
+			var data_TOPDISK = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'loop0','sda','sda1','sda2','sda5']
+,['Date(2019,  7, 08, 09, 39, 41)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 42)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 43)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 44)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 45)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 46)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 47)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 48)',0.0,1.0,1.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 49)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 50)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 51)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 52)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 53)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 54)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 55)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 56)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 57)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 59)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 00)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 01)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 02)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 03)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 04)',0.0,1.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 05)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 06)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 07)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 08)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 09)',0.0,0.0,1.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 10)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 11)',0.0,0.0,0.0,0.0,0.0]
+		]);
+
+		var options_TOPDISK = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Top 15 disks by sum(Busy%)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_TOPDISK").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_TOPDISK, options_TOPDISK);
+		});
+
+			var data_NET = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'enp0s31f6-read-KB/s','veth5474953-read-KB/s','veth52796bc-read-KB/s','lo-read-KB/s','docker0-read-KB/s','enp0s31f6-write-KB/s','veth5474953-write-KB/s','veth52796bc-write-KB/s','lo-write-KB/s','docker0-write-KB/s']
+,['Date(2019,  7, 08, 09, 39, 41)',1.6,0.0,0.0,0.1,0.0,-0.0,-0.0,-0.0,-0.1,-0.0]
+,['Date(2019,  7, 08, 09, 39, 42)',0.3,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 43)',1.0,0.0,0.0,0.0,0.0,-0.1,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 44)',0.5,0.0,0.0,0.0,0.0,-0.2,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 45)',0.4,0.0,0.0,0.0,0.0,-0.1,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 46)',0.3,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 47)',4.5,0.0,0.0,0.5,0.0,-1.7,-0.0,-0.0,-0.5,-0.0]
+,['Date(2019,  7, 08, 09, 39, 48)',0.7,0.0,0.0,0.0,0.0,-0.2,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 49)',0.9,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 50)',0.6,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 51)',0.5,0.0,0.0,0.0,0.0,-0.1,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 52)',0.3,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 53)',1.0,0.0,0.0,0.0,0.0,-0.1,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 54)',0.4,0.0,0.0,0.0,0.0,-0.1,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 55)',0.5,0.0,0.0,0.0,0.0,-0.1,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 56)',0.3,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 57)',0.3,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 39, 59)',0.3,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 00)',0.4,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 01)',0.4,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 02)',0.5,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 03)',0.3,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 04)',0.6,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 05)',0.6,0.0,0.0,0.0,0.0,-0.1,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 06)',0.5,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 07)',0.3,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 08)',0.3,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 09)',0.3,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 10)',0.3,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+,['Date(2019,  7, 08, 09, 40, 11)',0.9,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0]
+		]);
+
+		var options_NET = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Network Receive(read) & Send(write shown negatively) in KB per second",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_NET").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_NET, options_NET);
+		});
+
+			var data_NETPACKET = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'enp0s31f6-read/s','veth5474953-read/s','veth52796bc-read/s','lo-read/s','docker0-read/s','enp0s31f6-write/s','veth5474953-write/s','veth52796bc-write/s','lo-write/s','docker0-write/s']
+,['Date(2019,  7, 08, 09, 39, 41)',10.3,0.0,0.0,0.9,0.0,0.5,0.0,0.0,0.9,0.0]
+,['Date(2019,  7, 08, 09, 39, 42)',0.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 43)',5.9,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 44)',4.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 45)',1.9,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 46)',1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 47)',7.8,0.0,0.0,3.9,0.0,8.7,0.0,0.0,3.9,0.0]
+,['Date(2019,  7, 08, 09, 39, 48)',3.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 49)',5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 50)',2.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 51)',3.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 52)',1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 53)',5.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 54)',2.9,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 55)',2.9,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 56)',1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 57)',1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 59)',1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 00)',1.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 01)',2.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 02)',1.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 03)',1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 04)',2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 05)',4.8,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 06)',3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 07)',1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 08)',1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 09)',1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 10)',1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 11)',7.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+		]);
+
+		var options_NETPACKET = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Network packet count per second",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_NETPACKET").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_NETPACKET, options_NETPACKET);
+		});
+
+			var data_DISKBUSY = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'loop0','sda','sda1','sda2','sda5']
+,['Date(2019,  7, 08, 09, 39, 41)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 42)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 43)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 44)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 45)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 46)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 47)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 48)',0.0,1.0,1.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 49)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 50)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 51)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 52)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 53)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 54)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 55)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 56)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 57)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 59)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 00)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 01)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 02)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 03)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 04)',0.0,1.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 05)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 06)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 07)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 08)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 09)',0.0,0.0,1.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 10)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 11)',0.0,0.0,0.0,0.0,0.0]
+		]);
+
+		var options_DISKBUSY = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Busy Percentage of the time (Stacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_DISKBUSY").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKBUSY, options_DISKBUSY);
+		});
+
+		var options_DISKBUSYu = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Busy Percentage of the time (UnStacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			isStacked: 0
+		};
+
+		document.getElementById("draw_DISKBUSYu").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKBUSY, options_DISKBUSYu);
+		});
+
+			var data_DISKREAD = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'loop0','sda','sda1','sda2','sda5']
+,['Date(2019,  7, 08, 09, 39, 41)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 42)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 43)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 44)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 45)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 46)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 47)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 48)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 49)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 50)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 51)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 52)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 53)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 54)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 55)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 56)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 57)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 59)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 00)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 01)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 02)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 03)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 04)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 05)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 06)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 07)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 08)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 09)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 10)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 11)',0.0,0.0,0.0,0.0,0.0]
+		]);
+
+		var options_DISKREAD = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Read KB per second (Stacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_DISKREAD").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKREAD, options_DISKREAD);
+		});
+
+		var options_DISKREADu = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Read KB per second (UnStacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			isStacked: 0
+		};
+
+		document.getElementById("draw_DISKREADu").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKREAD, options_DISKREADu);
+		});
+
+			var data_DISKWRITE = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'loop0','sda','sda1','sda2','sda5']
+,['Date(2019,  7, 08, 09, 39, 41)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 42)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 43)',0.0,51.6,51.6,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 44)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 45)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 46)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 47)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 48)',0.0,15.8,15.8,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 49)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 50)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 51)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 52)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 53)',0.0,11.9,11.9,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 54)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 55)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 56)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 57)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 59)',0.0,15.8,15.8,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 00)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 01)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 02)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 03)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 04)',0.0,11.9,11.9,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 05)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 06)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 07)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 08)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 09)',0.0,173.6,173.6,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 10)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 11)',0.0,0.0,0.0,0.0,0.0]
+		]);
+
+		var options_DISKWRITE = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Write KB per second (Stacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_DISKWRITE").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKWRITE, options_DISKWRITE);
+		});
+
+		var options_DISKWRITEu = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Write KB per second (UnStacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			isStacked: 0
+		};
+
+		document.getElementById("draw_DISKWRITEu").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKWRITE, options_DISKWRITEu);
+		});
+
+			var data_DISKBSIZE = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'loop0','sda','sda1','sda2','sda5']
+,['Date(2019,  7, 08, 09, 39, 41)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 42)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 43)',0.0,26.0,26.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 44)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 45)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 46)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 47)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 48)',0.0,8.0,8.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 49)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 50)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 51)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 52)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 53)',0.0,6.0,6.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 54)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 55)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 56)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 57)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 59)',0.0,8.0,8.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 00)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 01)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 02)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 03)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 04)',0.0,6.0,6.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 05)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 06)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 07)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 08)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 09)',0.0,5.6,5.6,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 10)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 11)',0.0,0.0,0.0,0.0,0.0]
+		]);
+
+		var options_DISKBSIZE = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Block Size KB",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_DISKBSIZE").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKBSIZE, options_DISKBSIZE);
+		});
+
+			var data_DISKXFER = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'loop0','sda','sda1','sda2','sda5']
+,['Date(2019,  7, 08, 09, 39, 41)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 42)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 43)',0.0,2.0,2.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 44)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 45)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 46)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 47)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 48)',0.0,2.0,2.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 49)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 50)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 51)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 52)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 53)',0.0,2.0,2.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 54)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 55)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 56)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 57)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 39, 59)',0.0,2.0,2.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 00)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 01)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 02)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 03)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 04)',0.0,2.0,2.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 05)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 06)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 07)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 08)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 09)',0.0,30.9,30.9,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 10)',0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  7, 08, 09, 40, 11)',0.0,0.0,0.0,0.0,0.0]
+		]);
+
+		var options_DISKXFER = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Transfers per second",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_DISKXFER").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKXFER, options_DISKXFER);
+		});
+
+			var data_JFS = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'/dev','/run','/']
+,['Date(2019,  7, 08, 09, 39, 41)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 42)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 43)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 44)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 45)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 46)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 47)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 48)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 49)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 50)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 51)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 52)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 53)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 54)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 55)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 56)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 57)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 39, 59)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 00)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 01)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 02)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 03)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 04)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 05)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 06)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 07)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 08)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 09)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 10)',0.0,0.3,35.6]
+,['Date(2019,  7, 08, 09, 40, 11)',0.0,0.3,35.6]
+		]);
+
+		var options_JFS = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Journal File System Percent Full (Note: -1.234 = stats not avaialble)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_JFS").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_JFS, options_JFS);
+		});
+
+		}
+		</script>
+	</head>
+	 <body bgcolor="#EEEEFF">
+	nmon data file: <b>test.nmon</b>  
+	<button onclick="config()"><b>Configuration</b></button> 
+	<button id="draw_TOPDISK" style="color:black;"><b>Top Disk</b></button>
+	<br>
+	<button id="draw_CPU_UTIL" style="color:red;"><b>CPU Util.</b></button>
+	<button id="draw_CPU_USE" style="color:red;"><b>CPU Use</b></button>
+	<button id="draw_GPU_UTIL" style="color:green;"><b>GPU Util.</b></button>
+	<button id="draw_GPU_MEM" style="color:green;"><b>GPU Mem.</b></button>
+	<button id="draw_GPU_TEMP" style="color:green;"><b>GPU Temp.</b></button>
+	<button id="draw_GPU_WATTS" style="color:green;"><b>GPU Watts</b></button>
+	<button id="draw_GPU_MHZ" style="color:green;"><b>GPU MHz</b></button>
+	<button id="draw_RUNQBLOCK" style="color:red;"><b>RunQ Blocked</b></button>
+	<button id="draw_PSWITCH" style="color:red;"><b>pSwitch</b></button>
+	<button id="draw_FORKEXEC" style="color:red;"><b>ForkExec</b></button>
+	<button id="draw_MEM_LINUX" style="color:blue;"><b>Memory</b></button>
+	<button id="draw_SWAP_LINUX" style="color:blue;"><b>Swap</b></button>
+<br>
+	<button id="draw_NET" style="color:purple;"><b>Network</b></button>
+	<button id="draw_NETPACKET" style="color:purple;"><b>Net Packet</b></button>
+	<button id="draw_DISKBUSY" style="color:brown;"><b>Disk Busy</b></button>
+	<button id="draw_DISKBUSYu" style="color:brown;"><b>Unstacked</b></button>
+	<button id="draw_DISKREAD" style="color:brown;"><b>Disk Read</b></button>
+	<button id="draw_DISKREADu" style="color:brown;"><b>Unstacked</b></button>
+	<button id="draw_DISKWRITE" style="color:brown;"><b>Disk Write</b></button>
+	<button id="draw_DISKWRITEu" style="color:brown;"><b>Unstacked</b></button>
+	<button id="draw_DISKBSIZE" style="color:brown;"><b>Disk BSize</b></button>
+	<button id="draw_DISKXFER" style="color:brown;"><b>Disk Xfers</b></button>
+	<button id="draw_JFS" style="color:brown;"><b>JFS</b></button>
+
+	<div id="chart_master" style="width:100%; height:75%;">
+	<h2 style="color:blue">Click on a Graph button above, to display that graph</h2>
+	</div>
+
+<table><tr><td>
+<li>Host:dwendt-X299-A
+<li>Date:08-AUG-2019
+<li>Time:09:39.39
+<li>Interval:1
+<li>Snapshots: 30
+<td>
+<li>Number of CPUs:12
+<li>Number of Disks:5
+<li>Linux Kernel 4.15.0-55-generic
+<li>Linux Version "QUbuntu 16.04.6 LTSQ"
+<td valign=top>
+<hr>
+<li>Graphed by <a href=http://nmon.sourceforge.net/pmwiki.php?n=Site.Nmonchart>nmonchart</a> v 35
+<li>Developer: Nigel Griffiths @mr_nmon
+<li>Zoom=ON Left-click & Drag=Zoom-in. Right-click=Reset.
+</table>
+	</body>
+</html>

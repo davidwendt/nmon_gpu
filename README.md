@@ -22,3 +22,10 @@ Example screen with 2 GPUs here:
 │                                                                          │
 │──────────────────────────────────────────────────────────────────────────│
 ```
+
+You can build the source using the `build.sh` file.
+Dependencies include `ncurses` and the `NVML` library from NVIDIA's installed CUDA/driver.
+
+You can also just try the precompiled version here called `nmon_gpu`.
+
+The `nmonchart` tool requires the `ksh` (Korn shell).
