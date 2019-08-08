@@ -29,3 +29,6 @@ Dependencies include `ncurses` and the `NVML` library from NVIDIA's installed CU
 You can also just try the precompiled version here called `nmon_gpu`.
 
 The `nmonchart` tool requires the `ksh` (Korn shell).
+
+![gpu memory](gpu_memory.png)
+
